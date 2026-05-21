@@ -593,6 +593,7 @@ body {
   #sidebar {
     display: none;
   }
+}
 /* FORMULAS */
 .formula {
   display: inline-block;
@@ -605,6 +606,21 @@ body {
   padding: 4px 14px;
   margin: 4px 0;
   letter-spacing: .03em;
+}
+.frac {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 2px;
+}
+.frac .num {
+  display: block;
+  padding: 0 6px 2px;
+  border-bottom: 2px solid var(--accent2);
+}
+.frac .den {
+  display: block;
+  padding: 2px 6px 0;
 }
 
 .content-area {
