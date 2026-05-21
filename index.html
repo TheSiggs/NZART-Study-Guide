@@ -7493,6 +7493,16 @@ and low audio output.</p>
         produces harmonics Harmonics which are not exactly on the frequency being received can sometimes be removed
         with a selective filter - band reject, high pass or low pass. Generally, harmonics should be suppressed at
         their source.</p>
+        <h4 class="doc-h4"><strong>Parasitic oscillations</strong></h4>
+        <p>With parasitic signals there is no simple mathematical relationship between the operating
+        frequency and the interfering frequency. The effects may be the same as with harmonics -
+        a VHF receiver being interfered with by a HF transmission. The cause is an additional and
+        undesired oscillation from an oscillator or amplifier for which it was not designed. The
+        circuit functions normally but the parasitic oscillation occurs simultaneously.
+        Parasitics are suppressed by adding additional components to the circuit to suppress the
+        undesired oscillation without affecting the primary function of the circuit. A typical solution is
+        to add a VHF choke (an inductor) or a small-value resistor (a "stopper") somewhere close
+        to the active component in the offending circuit.</p>
       </section>
       <section id="qf-20" class="question-section">
         <div class="qf-header">
