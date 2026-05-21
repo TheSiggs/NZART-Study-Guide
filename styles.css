@@ -539,6 +539,53 @@ body {
   border-color: rgba(248,81,73,.3);
 }
 
+/* BAND TABLE */
+.band-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 13px;
+}
+
+.band-table th,
+.band-table td {
+  padding: 6px 12px;
+  text-align: left;
+  border: 1px solid var(--border);
+}
+
+.band-table th {
+  background: var(--surface2);
+  color: var(--accent);
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+.band-table td:first-child {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--accent2);
+  white-space: nowrap;
+}
+
+.band-table td:nth-child(2) {
+  font-family: var(--font-mono);
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.band-table td:nth-child(3) {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.band-table tr:hover {
+  background: var(--surface);
+}
+
 @media (max-width: 768px) {
   :root {
     --sidebar-w: 0px;
