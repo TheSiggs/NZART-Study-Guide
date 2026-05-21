@@ -593,7 +593,21 @@ body {
   #sidebar {
     display: none;
   }
-  .content-area {
+/* FORMULAS */
+.formula {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 15px;
+  color: var(--accent2);
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 4px 14px;
+  margin: 4px 0;
+  letter-spacing: .03em;
+}
+
+.content-area {
     padding: 16px 14px 60px;
   }
   .top-bar {
