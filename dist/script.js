@@ -61,6 +61,28 @@ function initNavObserver() {
 
 document.addEventListener('sections-loaded', initNavObserver);
 
+function toggleSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  const overlay = document.getElementById('sidebar-overlay');
+  sidebar.classList.toggle('open');
+  overlay.classList.toggle('show');
+  document.body.style.overflow = sidebar.classList.contains('open') ? 'hidden' : '';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.getElementById('menu-toggle');
+  const overlay = document.getElementById('sidebar-overlay');
+  if (toggle) toggle.addEventListener('click', toggleSidebar);
+  if (overlay) overlay.addEventListener('click', toggleSidebar);
+
+  // Close sidebar when a nav link is clicked on mobile
+  document.querySelectorAll('#nav-list a').forEach(a => {
+    a.addEventListener('click', () => {
+      if (window.innerWidth <= 768) toggleSidebar();
+    });
+  });
+});
+
 function filterNav(q) {
   q = q.toLowerCase();
   document.querySelectorAll('#nav-list li').forEach(li => {

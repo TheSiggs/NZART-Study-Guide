@@ -43,6 +43,12 @@ body {
   top: 0;
   overflow-y: auto;
   flex-shrink: 0;
+  z-index: 20;
+  transition: transform .25s ease;
+}
+
+#sidebar-overlay {
+  display: none;
 }
 
 .sidebar-hdr {
@@ -164,6 +170,10 @@ body {
   position: sticky;
   top: 0;
   z-index: 5;
+}
+
+#menu-toggle {
+  display: none;
 }
 
 .top-bar .logo {
@@ -592,11 +602,102 @@ body {
 
 @media (max-width: 768px) {
   :root {
-    --sidebar-w: 0px;
+    --sidebar-w: 270px;
+  }
+  body {
+    font-size: 14px;
   }
   #sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-100%);
+    border-right: 1px solid var(--border);
+    z-index: 30;
+    box-shadow: 4px 0 24px rgba(0,0,0,.4);
+  }
+  #sidebar.open {
+    transform: translateX(0);
+  }
+  #sidebar-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.55);
+    z-index: 29;
+  }
+  #sidebar-overlay.show {
+    display: block;
+  }
+  #sidebar-hdr-toggle {
+    display: flex;
+  }
+  .top-bar {
+    padding: 10px 14px;
+  }
+  #menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 20px;
+    cursor: pointer;
+    padding: 2px 6px;
+    border-radius: 4px;
+    line-height: 1;
+  }
+  #menu-toggle:hover {
+    color: var(--text);
+    background: var(--surface2);
+  }
+  .top-bar .logo {
+    font-size: 13px;
+  }
+  .top-bar .subtitle {
     display: none;
   }
+  .content-area {
+    padding: 16px 14px 60px;
+  }
+  .section-title {
+    font-size: 18px;
+    gap: 10px;
+  }
+  .sec-num {
+    min-width: 30px;
+    height: 30px;
+    font-size: 11px;
+  }
+  .study-section .doc-h1 { font-size: 18px; }
+  .study-section .doc-h2 { font-size: 16px; }
+  .study-section .doc-h3 { font-size: 14px; }
+  .study-section .doc-h4 { font-size: 13px; }
+  .q-text { font-size: 13px; padding: 10px 12px 8px; }
+  .options li { font-size: 13px; padding: 8px 12px; margin: 2px 5px; }
+  .qf-header { font-size: 14px; padding: 10px 12px; flex-wrap: wrap; }
+  .qf-controls { flex-wrap: wrap; }
+  .reveal-all-btn, .reset-btn { padding: 8px 14px; font-size: 13px; }
+  .reveal-btn { padding: 6px 14px; font-size: 13px; }
+  .answer-bar { padding: 6px 12px 8px; }
+  .answer-label { font-size: 12px; }
+  .study-section p { font-size: 14px; }
+  .band-table { font-size: 12px; display: block; overflow-x: auto; white-space: nowrap; }
+  .band-table th, .band-table td { padding: 5px 8px; }
+  .doc-img img { max-width: 100% !important; height: auto; }
+  .sidebar-hdr { padding: 12px 10px; }
+  #nav li a { padding: 6px 12px; font-size: 13px; }
+  #nav li.qf-nav a { padding-left: 20px; }
+}
+
+@media (max-width: 480px) {
+  .top-bar .badges { display: none; }
+  .section-title { font-size: 16px; }
+  .options li { font-size: 12px; padding: 10px 10px; }
+  .q-text { font-size: 12px; padding: 8px 10px 6px; }
+  .letter { min-width: 20px; height: 20px; font-size: 10px; }
+  .score-display { font-size: 11px; }
 }
 /* FORMULAS */
 .formula {
@@ -627,10 +728,4 @@ body {
   padding: 2px 6px 0;
 }
 
-.content-area {
-    padding: 16px 14px 60px;
-  }
-  .top-bar {
-    padding: 10px 14px;
-  }
-}
+
