@@ -431,6 +431,7 @@
         <button onclick="revealAll(this)" class="reveal-all-btn">Show All Answers</button><button
             onclick="resetAll(this)" class="reset-btn">Reset</button>
     </div>
+    <div class="score-display"></div>
     <div class="question" data-answer="C">
         <p class="q-text"><strong>1.</strong> The Amateur Service may be briefly defined as:</p>
         <ul class="options">
@@ -1529,6 +1530,10 @@
                 style="display:none">Answer: <strong>B</strong></span>
         </div>
     </div>
+<div class="qf-footer">
+  <button onclick="resetAll(this)" class="reset-btn">Reset</button>
+  <span class="score-display"></span>
+</div>
 </section>
 
 <section id="sec-2" class="study-section">
@@ -1770,6 +1775,7 @@
         <button onclick="revealAll(this)" class="reveal-all-btn">Show All Answers</button><button
             onclick="resetAll(this)" class="reset-btn">Reset</button>
     </div>
+    <div class="score-display"></div>
     <div class="question" data-answer="D">
         <p class="q-text"><strong>1.</strong> Amateur stations are often regarded as "frequency agile". This means:</p>
         <ul class="options">
@@ -2050,6 +2056,10 @@
                 style="display:none">Answer: <strong>C</strong></span>
         </div>
     </div>
+<div class="qf-footer">
+  <button onclick="resetAll(this)" class="reset-btn">Reset</button>
+  <span class="score-display"></span>
+</div>
 </section>
 
 <section id="sec-3" class="study-section">
@@ -2131,6 +2141,7 @@
         <button onclick="revealAll(this)" class="reveal-all-btn">Show All Answers</button><button
             onclick="resetAll(this)" class="reset-btn">Reset</button>
     </div>
+    <div class="score-display"></div>
     <div class="question" data-answer="D">
         <p class="q-text"><strong>1.</strong> The element Silicon is:</p>
         <ul class="options">
@@ -2402,6 +2413,10 @@
                 style="display:none">Answer: <strong>D</strong></span>
         </div>
     </div>
+<div class="qf-footer">
+  <button onclick="resetAll(this)" class="reset-btn">Reset</button>
+  <span class="score-display"></span>
+</div>
 </section>
 
       <section id="sec-4" class="study-section">
@@ -2525,7 +2540,7 @@
           "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAYEBAUEBAYFBQUGBgYHCQ4JCQgICRINDQoOFRIWFhUSFBQXGiEcFxgfGRQUHScdHyIjJSUlFhwpLCgkKyEkJST/2wBDAQYGBgkICREJCREkGBQYJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCT/wgARCAElAhkDAREAAhEBAxEB/8QAGwABAAMBAQEBAAAAAAAAAAAAAAUGBAMBAgf/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQMCBP/aAAwDAQACEAMQAAAB/VAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJPCP75keO1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADklc3zj9M7x5PQUAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAhtOIzfKQSNtt3j3WgAAAAAAAAAAAAAAAAAAAAAAAAAAAABJmsr+/HbvjQIjOlu8e60AAAAAAAAAAAAAAAAAAAAAAAAAAAAJPKgtOMO2UjagCMq3eTcoAAAAAAAAAAAAAAAAAAAAHwfR6AAAAAAYbzA75bO+erpIpAjKt3k3KAAAAAAAAAAAAAAABSy2mY+jWZDqD4OxTC1HM3GQ2mQ0GQ2nMpqcJb8kBvnw143CAABGVbvJuUAAAAAAAAAAAAAAAChHM5G06EIajAcyWMxayjlgPk5mcsJSyYP0IoaWCyO9GO+z7UAAARlW7yblAAAAAAAAAAAAAAAAo59G8kivlYJ0+CXIwjCTMRJFiK4RhZivltjX1z+Q2WnfO02AAAACMq3eTfxaAS5aQAARRKgAAAAAAAAAAAAHwV0sh6eHoPAD0HgPCK65ifRjInoAAAABGVbvJv4v5ITZpOJYCsEseFbLoV8lyEJQiywEGSBcAAAAAAAAAAAAAAADPZX98vvvjUqAAAAABGVbvJv8rRDgRZYTIQJPlpKwbSvEwTRCmIsZTS5FlAAAAAAAAAAAAAAEQmucbtlJQtAAAAAAEZVu8m/i5D5PDGajMSJGm05GQkTscjGbCPNxuAAAAAAAAAAAAAEZLzX98tOnHedAAAAAAACMq3eTcoAAAAAAAAAAAAAAAAAAAAAR5UBrnk1zkLEoAAAAAAAEZVu8m5QAABjORwJgAAAAAAAAAAAAAAAQrB1zA7Zbu+ekFAAAAAAAAEZVu8m5QAAB8n5YWktgAAAAAAAAAAAAAAB8SV7bPltnulAAAAAAAAAAjKt3k3KAAAPg/LyyluAAAAAAAAAAAAAARLGd8Qu+UhZ9KAAAAAAAAAAIyrd5NygAADAeGEngAAAAAAAAAAAABHK813XNrxsUAAAAAAAAAAARlW7yblAAAAAAAAAAAAAAAAACFQ/ecVvnI2ewUAAAAAAAAAAARlW7yblAAAAAAAAAAAAAAAAAGe813bHt20gAAAAAAAAAAAAEZVu8m5QAAAAAAAAAAAAAAAEeEHrng3zkYAAAAAAAAAAAAAAjKt3k3KAAAAAAAAAAAAAAAEYuuYDfLX3O0AAAAAAAAAAAAAACMq3eTcoAAAAAAAAAAAAAASfNV/bPPrnv5FWAAAAAAAAAAAAAACMW3eXcoAAAAAAAAAAAAAAjuuK1vju656TpYAAAAAAAAAAAAAAAI+rp4/SUAAAAAAAAAAAAAAZk42LQQAAAAAAAAAAAAAAIHpulKAAAAAAAAAAAAAAEAAAAVioothIQBFVtNEQ1TMAAAACg1qLmewFAhQAAAAAAAAAAAAAAAAAABQDMTRDEmQhPmY7ldLoVklyFJQjSxlYJMvB+VGs/SgAAAAAAAAAAAAAAAAAAAAAAUEnysHEtJWT6LGU8lDSQJLk2QphLOUwuRZSgHI/Qz0AAAAAAAAAAAAAAAAAAAAAAzGkyGQ3GA3nyZzQfJnNZ9nwcDuZTQazMDQegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//xAAwEAACAgIBAwIEBAYDAAAAAAAEAwUCAQAUBjJAUDARNRMVEiAQFjEhNDZgIiVwgP/aAAgBAQABBQL/ANiOOQPf/AWMoqrDXGZeNRFP8AJkaKtx7vtp3b6856x6XIIO1KFor+h3b66+Sx+Kg34r/kO7fTLWxXGP5+8QUoWt7EH6tVFV/Kd2+hSpLlTF3LXbBwuWtNGRb8WM4saNVaXqIq56h6oLQTrW0TXqItJMILbFQqyQd73ZVdGnCp2tsXq8wcbVto2rjxR7UvVlXUyxV4UxdOmrGPbnPww6RszKhcVt+c7t9CmvnvUy/qlzsOIHFjwgro3ppl2Q/TcWOWOOqsX1I80V064kOslJ1+59QdSQ4o4DEjPipZsHcAtlndJxUGI6O6ZbZQsCCmTowdMKBGExFRem24wZs6Tcwj6o0UParzdrXFMewd2+hS6r3mpxV7yHUdLMiBcZxG9NruqLgpRscLG0fJS7sOhZcecqW+XU8KVmDyZcCdEIIhTZHnxrlX/acTXNIzp5F8ZBLb09lTHTIUfJ3iB44/J2mvyMIBJOGxGF0e72ju3c6iblDMxk1zX/AJnyCRivLtj41go90cJ7pUgsfOUtKzjGMY9s7t3P8IWbGi6xVbyksQ8mTlL2KhDTxSyrvyXCHTZ71NXFSAzJcJ/3yoZiQTo84IW5rG9PADSUsF0+a8ig9y5949So1AQ50ymFMIyR57W0TS5bzNSPRGPdO7dz/DpbGMpB/wCInrBhfuCsVBJfLPs6akxwBjp23CmbywVNnL1TMz8jlcbIAxaYxX9owHyeA+YdMkqAqUQmUDhQIcoOLEjB2+cTJVXbA1nX987t/QcRAmHBIIaUAMbUaGAEuXHjH1pDgKo5CyFjQseIwoIc2io4RA6YOORnAaMDJTQdSREj3LiQjrDCIEWTCR5bBgRwq+Y8lY1buIP1SaJr4B3b6d8dfJfGyxf9/CO7fZKIwKOEao8esmi0h6CSYoStuQftF1VXwzu32c4xnFybdLF9Px9hR/PznFcNkbvyoXC7eKd2+znPwxYa3VBHT0jYsbzijlC7ZbjM1rimPGO7fZNG5gwQawRqxKqSfmXZVdWHNK1AtEeSd2+jkyNE247Cbfw8o7t9Fc5aKMJIO1KFor5Z3b6ITJYrao2b3807t9CIKULS7CT9Uqia+cd2+gfH4a6Syyyxfhf0A7t88s5IVbEZO2jRl15Kd5Kd5Kd5Kd5Kd5Kd5Kd5Kd5Kd5Kd5Kd5Kd5Kd5Kd5Kd5Kd5Kd5Kd5Kd5Kd5Kd5Kd5Kd5Kd5Kd5Kd5Kd5Kd5Kd5Kd5Kd5Kd5KdLcu+PPYOl28ATeAJvAE3gCbwBN4Am8ATeAJvAE3gCbwBN4Am8ATeAJvAE3gCbwBN4Am8ATeAJvAE3gCbwBN4Am8ATeAJvAE3gCbwBN4Am8ATeAJvAE3gCbwBNwELXPpE9JtixXSM2HQEtZwv6yOS8Co+p9HSpJYhftZlpR8gJNEVO9O6x/oD+ouQlVf2/BCg4OHgz3ORFj4mFzuWiwUqYQPBARasWmY74TOI5qAT4rAguTGEdNx0cVLAdOFPvo9X9RFCjNilBK+8LhSm1N0eRrHTYrLdQy3p3WP9DNAYPj1tvM9MRdYJ4QFoxKJXEMQLIMc3pLBQo8aTQUKR6gvhErPSH4okxUIqLR/Z/T3yWA+aQJaop1jB5dMKqIsNG1isO2G+fH4+0T2PTnDqIxqRkj62KCddaFqp9pB+o1K3LYMlqx44UXLxlE0WIhKlxgac4HVhK1UTRY6lXIAGL1I6h6PjhCrIFSNXaDqWxw6iMY/l/1L/8QAHREAAwADAQEBAQAAAAAAAAAAAAESAhFgMVCAIf/aAAgBAwEBPwH9iPLgtjzPeBeWh/3gdjy3wTyPeBbHkI197Q2PLgssiuBbGa4HLIb3wO9Dy2a4F5nvAvIeXBPI9FwDy0PLfA70PLgnkPLfA7HnvgnkPgWx58FllwTZllwTyPeByz0PM2bNlFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFG/gaRKNI0iUSiUSiUSiUSiUSiUSiUSiUSiUSiUSiUSiUSiUSiUSiUSiUSif1h/8QAIBEAAgIDAAMBAQEAAAAAAAAAAAERAhIhYAMxUFGAQf/aAAgBAgEBPwH+xFSeCiSvjPXA1pIlBPAKovHHBVp+iUeuBVZFWOCr4598FWgqpD4CBInga1FVIjgIkr40vZPA18ciUDI++qyKkcFXx/ol+DI++qyKkDYvvwVoeiSPvqsipHAwKnBKgqpcClJXx8FXxyLQ+AVJK0jgq+F/6ejZDNmzZs2bNmzZs2bNmzZs2bNmzZs2bNmzZs38KtJF4h5GLMWQyGQyGQyGQyGQyGQyGQyGQyGQyGQyGQyGQyGQyGQyGQyGQR8CWZMysZWMmZMyZkzJmTMmZMyZkzJmTMmZMyZkzJmTMmZMyZkzJmTMmZMyZkzJmTMmZMyf9Yf/xABEEAACAQICBgYHBgQDCQEAAAACAQMABBESE5IxIUEiUTM0BXNQcTJAYRQQMFIjQlNywaEggSQVYOFDYnB0gJGisdHw/9oACAEBAAY/Av8ArEEDPmJ4YL/ITIyQpcXWW2Wji/MfH0UGXeTkWJPa/wDIOiiWlm+yuHprSXRZ3wBeqvlH4g+f55CQqsAxgh6fxOsAX+vzj8QfPtFbDpZP4KtLcFpZOHQP8sfiD5bi2l6fr4yF6Fxdc2MEP2V6xVlAUK/mj8QfI+74glMQN8yT20IkaTLYnxrQqeNyfZzUhlnjAnwbrHHdWlc8aDZmxrNFIJrpTrNLIILpbr7mYJP0us8hiI9LqZwTCeBD6r99QsngtGO9+isg3MTLozUzMkIra3Q6SeMc29YltpELTT4qvvpgD0us0Zol0qsstxGBdDKswtEulUQCbBtYZlwpmXflykt7eH+tTzS3Ms1v6gZ+PvrF047NZ3xkfqqtJITll+0/oR+IPkfdfpru+NGwzHhiq0tvHo5Ymmj4utJOOmmlDM5S2400TxyMhVFNcrS4G0IF6o0reDlhnDHJwTq4/wAQzFFByxhlbWNWk3dYmJZ8sgoGk1UFjI3oIwzkPS6K4tw0LHBNDsLfUQ3ZYQoBb5sKkG1EVMPqEIP/AN1nN4k4RxdRSXAaeSWNPMXD3KryFvMNvI8tTX14CmOQ2lm4Krua2HLys8vBOs14imuJN5kUbKryCDP8KuaPMnu+UfdFs+eTfK/sjQQDwWAgO11jcPJHwiH96yikl9GPxB8j7tIQJiL3tLZXdzECJDJvwWyphAWT3blUYtPHRbP6VKpAIXnLaqLSWsstszeBxrFp0XeUsJwxAOWNHtdTXit5Jra4XNk3sXQR29lctN7zIMENQ96wxFKCHJII7aMLWymGAcGZSDvfuSq2UQEeTKzjW1rCpLay7umTy82IYIa0eQs+hXLhvq1Ek01EO5+iu8VIBCjl4rbUtpc2s5xZ2UZxjjjVyEtuVuEiYhn2v30rK+s7jGPcJAOKJUZfCzQAvVciwzVLMKzMBxSqWVW053Ez55cuOHopj8NcDJhi5JV9OPxB+cvwvd8cgRllxz4UdrPAVvchtB8f54LY82ef1cNntjVFFNlzZ2931si+8lewBrNdlu4RrYqwW76kfiD8nV0E6lxcrfKONF3tk0cGXIG/e6ksLedwRQr7wx2t1bid0dxbTvLz7RdAMN18PF+LKuZ1af3klxDOWUlJwq3sbR4T3D9b7KqM4+8Tl3rSDJsaq0XxkmMpEwf5foo4QvGczLdJItlHdh3nOckazNFsdFdi8kjgZYrg6CeS+KAcORBx97qe3uizS255c3TU5x3R29rGWUMm0quCu7jTxgswFxr4yW9kgE/UCPgqubC6LPJA9x/aXkGeQkI++sIMYovzHtdcq3vaT2v60fiD8nV4mt2ndSWWyC45410OrqPvFcsvPGTeCqPLo9JjyrSY76gsZpyt7UgzNp5czqyCzPMelWfmzV3ffH1I8hPo/wD2NB/cRkzaEULxxruyU3lAW8SdOSzmW88hGDxy0UruXLOQ8rcmLJ0/+XdWv6K708WriwuDGKUJH6zwxq8trWRSEIYPLsofiEKnHcaI8Kk+AyM0sDylj7fooR0svQtirS3RaQuA/hH2CPxB+ZKCNBmeZ4cXUcssaI494vorLcQhIvfWeG1AS6duFIbmEZEtmPChALYEhLOvTTjmATB8CVaSG2AT6duFaO4iGQffTtggBQltHppsLUMX076+G0a0OGXJ7qGKIcoDsVSHFGhKR4k+ms9xbgZdOx1o4IhjH3VpJrUGfSt2P/astvCEa9y2+25pCSVYLGCD/wAirKA4ewx+IPmGitB0p9P4RrSzlpZel7F6PY4/EH6RzEiIQWLQ7aGeF4iX8KdiOYpRWJNLcvIsZC9Ara6+9+5i/LW1+msoJJeyR+IP0sHsq4iQsreZZ4vc6c8++5uOc30e7yDFvBU47NY9Mr2KtIT0kv2i9mj8QfpYvZVzNi1BEskPvdOCbdcW7yGn7fg+aR7AHbWNy8oflD+9YCsF7PH4g/SODOQI1g2NBbxLlH+NO/AiAyWBCthe2sjJClxdZbVZA/Nf7VisSN7Te1+0x+IPlGjBOWX7I1pLss3RGvVXtcfiD5NnkJCqwhxhh+3+IqwBf16fbI/EHyXRW46aX+A+mtLcnpT6OA+3R+IPkeaUsP3rfjBD0fidZQHBe3x+IPkO+nFZjnLif4VWllLSy9L4eQx+IPkGMj3vYuLr7+cIovy0W301lCSJLoTrro9auuj1q66PWrro9auuj1q66PWrro9auuj1q66PWrro9auuj1q66PWrro9auuj1q66PWrro9auuj1q66PWrro9auuj1q66PWrro9auuj1q66PWrro9auuj1q66PWrro9auuj1q66PWrro9auuj1q66PWqNDIJPSLY/IPvIgP9Q412aHUVdmh1FXZodRV2aHUVdmh1FXZodRV2aHUVdmh1FXZodRV2aHUVdmh1FXZodRV2aHUVdmh1FXZodRV2aHUVdmh1FXZodRV2aHUVdmh1FXZodRV2aHUVdmh1FXZodRV2aHUVdmh1FXZodRV2aHUVdmh1FXZodRV2aHUVdmh1FXZodRV2aHUVdmh1FWKt4k/wBC8pGWEQIiLLz7Kc1xZW5xD62je+o7iLHKf8j+BQubhmqPTYKTKs2GzH5W9sYkyuHgLWxfTubWzgtiUDw58f8A7Q2XeNsoZT9Uhe5+XxeJTtIbWaOSbkTmwFVvwI4xx9JOhubvvOVTyLNyyJIP6VcwylpZbZ4ZvtUUtxfzjc5nyCWGT+lFhMTkHKs+xuoJIjaIxBFJ0bqiubbvCc+Jc+ZFVmviZ/7g3x9T0UdvBeS5yeOlk3tVJcQ95XHxEazc0m2juscJHC3iumo5rq+mAcMIxjf8XV1aXJ6Q7aTLmdXBlcyw2sRZAGN4Y1cFLdHPAlmDP6w9NO7vb84875IwPLlVXHd8k+nUe+OTjh8u8SKGaXMX+zHHCortCooLXg3zN+Xw+Kqkjw50swemjDbPGspLpaoHMFsEwrA1I8HjU0tjo1GPWMF0VJeQ3Ecc+XESjLAm/RSO46xodvpq0G7IRCSMR5lu2VavumZM5DwOOMsVhXdk8m6MSeJdGyjkspkazoDON44KiIGE05By82Ys1PwCq1/T+9d7+N+7q7sbw1CWkzCz3J1d21sefAMMy9XfWhvo4Y7mN4Fpd2NSf4eoc4rmYfLvT9VQXgcsNzySeny/LLGJpb9/yLRRiGbe8ONZ5LaJl04VkjjER6Eq0nwsWb9NaOQBIHwdaI4wIPstVjDBGD6UqyTRiY9DpwhEAxv8OG2m47aMW9z3VoFGOiwwy8KQRihFbEqM4wESPeTXGvv4AkfvVZIoxAehKs01vGZdLVZYYgjX+6vkUgRiJn6zXGkMsYmk8d//AAm//8QALBABAAIBAwIFBQACAwEAAAAAAREAITFRQXHw8WFQkaGBsUAQMMEg0WBwgP/aAAgBAQABPyH/AOw5p1MRmf8AoWUsSkVArQTz0K0h1CMn/QJsyLaffOKDjDPYWgGDAaXtm/r78Z5ebqCOfaXCvOrz+3bN/XVgszAtU+dqn5/fEf69s39Nizd1BUCRkf7YzV0PsXHNPJ7m1JHPB/t2zf0JryjYQ66gL4ZDWdsRATdNoENoKQwmZuVo5DE3qndXojdUtSDXLUoFqsFzXMssY0noSJHC5nDEBSxBOAFFRo2Rc+NhJGqgu6EdLs+iyUCycIaQedEka+hw1HvQlvI0FEtMq9c6DvWgyQHLTa6PZWzJDXj6bfw7Zv6H8jUcJueTFYFCDe5bLHK7MxONq5eena8qXYyZxvRZl/qD/FbNDXeih9avVyOvrdF5b5z/AMWZosXFGpZ3EdhwGrtSDYIfM+SvMyxyyWe6FlTGNiCooyhwRp8XVKNMLauqECUwcQdbmPP6JpizQmIxlqZreDGP2O/81p2BRna6NeqnxrQNP49s39Ca1xMglTfgqSm3fQy607AgkZqeIuIqwsJuxCWHoXo8yzyGQ/QrHglGbrY3LFkGc+z8XGohTKQLXNQHRxgbLOVM8dM43cVIKQeoOKVhpCEwrNEROQzUbKAwPF0wbWJNR1s+JNPA8ogkn0WYCm4azQ7ozap6YtY/z7Zv+lAtVHS0dHVKQwMp0blks2SzZs3Xv0xOG9k/UlmzZslks/3j/RytUS5CwM5IsfqLFixYbH7j9kzfND67UTMGfl29BBA0D+nbN/18apJD2J96MgEaD5rFGEpBO2LO4TLkXNM5EoE8n1kE/NDHGCz5339qRUxPUZj6XiMcEnapcbpSOMR72FWAiI1xYVgOwVJUxGbJ5EPbv3c7KUiU8CIwyPxZCdWOHBNFicwQ9segLADVVxOrg9gr7esjq/27Zv8Ar41J4oUdG4tj7DY+9MRNZdPn73WEnPTwxN3osBrE/SLH8U4WSP8ANECyPmE1H4jDaWDSmeE4AaVdmDBDnS6mzOz5db2/ZvfebTg7a1SYkeUc9LPgQZSdAedLl69K53idqsoQmGcfb89B2oVpGO+Cfgds3/SSUxHG+4qRfl62HOtI5OjqU8Q6OV0TpetQU6EyUhPtSY6M6t1dqzCgjjRyuidLG0mQ4dGu6CVJOqdeKO+MLLDynT6WAfoZ5KMAkHoWCJpc6NC/P7hfISp1qRi1mfVhNauWut1PP5qX56b9aV3RYshzu/g9s39PYa10Bov3jdQ/CB+H2zf+UeWATCoWlYdVs34U8w19CxTruOgV5E8K++pQK4PxO2b/AMkQSsI81CgR42bJ8iVrLT0A4AGVbAzmPg29mjTXW+m343bN/wCRskDKtOrdwm7fOHQGMD/j8+Mm3gV3N0TH/KhSBoGn4/bN/wCUl81FHNgdHq6rlb8gYCH2/NLoWUipvGEfssl5wX8k7Zv6PNmwGnF12sCKGewtAAGA4NPyu2b+jKgnlqmZ6r4Nrqguqy9X5nbN/RFqHjKHzKe2D9kXp+b2zf0PHL4OegvKf9L57Uabyufz+2b+goC4By0QBYTtacmTp9HoPbN/QPIPGjs7Ac9SjiPQN8MXwxfDF8MXwxfDF8MXwxfDF8MXwxfDF8MXwxfDF8MXwxfDF8MXwxfDF8MXwxfDF8MXwxfDF8MXwxfDF8MXwxfDF0vURXX0B0XzAhD39EIMsssssssssssssssssssssssssssssss88MHmRJD0ktJYS+xKPMJkwPdrpQpB4dE/0fZeQ0RzWmGKdKOY+v6W7CAwRr7/AM87opBaCZszXf19PcPsfs0wG4EE43qwtUo0RMfNhJkEwaFD7RJ4Zj7WD7R6MotDU3gzSUYrKUS0IeRIA+ZcrsmUzmf50xuIwfExpwNZ6XMEjlIr4elhhJPxXmDEGDHmtDRgOskp/i5h9DHu982JAM4Ewn2s6kkMOKuuOMZW1f0Vu4JZcylwV1Dusyccf809PRmVnHIKY53qZJ7lHUmGQ1c2cQctEifrh4oACtsGOqyrSi6ng+1LEQ1mOu1KOXzL3FXby/ZUfXYwFk+nvVl1GSYau2b2jdvyf3XQPLqHWNqC41+hZTWeWSHA86WSuhKfupwghmkddP12nnRCaANPP9vZ9PG1JAMw/rVXsOJVMla8t6OnxQ/M00q1SFJQY2QSAqd78xeSRwyXXpgMOqncmQ42DhwOjaKRR4BgqoUgMvzqQhNHMXkS2EX68gN3EAQT+tPQCzcDJAMw70QgwH/kv//aAAwDAQACAAMAAAAQkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk9qkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkUhkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkjWMjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkaW2jkkkkkkkkkkkkkkkkkkkkkkkkkkkkk9nEkhkkkkkkkkkkkkkkkkkkkkkgEkkkkkk8ckkhkkkkkkkkkkkkkkkkAAEEkkAAEkk75E22khkkkkkkkkkkkkkkkkkAgAEEkkEAg+dk22khkkkkkkkkkkkkkkkkEggkAEgAkARak222khAgAAAEAAAEkkkkkkgEAEEAggEk0Uk222khEEEAkAAgkkkkkkkkkkkkkkkkhjk22222khkkkAEkEAEEkkkkkkkkkkkkkkV7s22222khgAgkAggEgEkkkkkkkkkkkkk2Ut222222khkkkkkkkkkkkkkkkkkkkkkkykNt222222khkkkkkEkkkkkkkkkkkkkkkwGP22222222khkkkkgkkkkkkkkkkkkkkkk5qm22222222khkkkkkkkkkkkkkkkkkkklTi2222222222khkkkkAkkkkkkkkkkkkkkX+G2222222222khkkkkkkkkkkkkkkkkkkwYt22222222222khkkkkkkkkkkkkkkkkkgvy222222222222khkkkkkkkkkkkkkkkkjUC2222222222222khkkkkkkkkkkkkkkkkQom2222222222222khkkkkkkkkkkkkkkkd73tttttttttttttttxkkkkkkkkkkkkkkgLqbJJJJJJJJJJJJJJJpkkkkkkkkkkkkkkkSgJJJJJJJJJJJJJJJbNkkkkkkkkkkkkkkkm222xJzdOrz2ezVp2kMkkkkkkkkkkkkkkkkkkkkgAEEEAkAEggkkkkkkkkkkkkkkkkkkkkkkkAEggkggAkkAkkkkkkkkkkkkkkkkkkkkkkkEgEEgAgggkAkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk//xAAjEQACAgICAgIDAQAAAAAAAAAAAREhMVFQQDBBECBgYXGA/9oACAEDAQE/EP8AYSQ2JVH7/AX8ZuSFhc9B/T1hwlBoWOddDPrH9IgmTQsc3BMEeBv3+uhY5uInEnI9ProWOXdjoQeJ0LHL4IRyGp8OhY5ZCHTH4+hY5WAYE2Nvx6Fjkkhr0G6FjkW4IxthUT5tCxyCESkN9HQscfENhCUujoWOMX7FYdYaFji37CXAp9jII6ehY4iCdikMCrr6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"
           alt="Diagram" style="max-width:537px;width:100%">
         </figure>
-      </section>
+</section>
       <section id="qf-4" class="question-section">
         <div class="qf-header">
           <span class="qf-tag">Q</span>Question File 4 – Measurement <span class="qf-count">(10 questions)</span>
@@ -2534,6 +2549,7 @@
           <button onclick="revealAll(this)" class="reveal-all-btn">Show All Answers</button><button onclick=
           "resetAll(this)" class="reset-btn">Reset</button>
         </div>
+        <div class="score-display"></div>
         <div class="question" data-answer="D">
           <p class="q-text"><strong>1.</strong> The unit of impedance is the:</p>
           <ul class="options">
@@ -2665,6 +2681,10 @@
             style="display:none">Answer: <strong>C</strong></span>
           </div>
         </div>
+<div class="qf-footer">
+        <button onclick="resetAll(this)" class="reset-btn">Reset</button>
+        <span class="score-display"></span>
+      </div>
       </section>
 
       <section id="sec-5" class="study-section">
@@ -2700,7 +2720,7 @@
           "data:image/jpeg;base64,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"
           alt="Diagram" style="max-width:570px;width:100%">
         </figure>
-      </section>
+</section>
       <section id="qf-5" class="question-section">
         <div class="qf-header">
           <span class="qf-tag">Q</span>Question File 5 – Ohms Law <span class="qf-count">(20 questions)</span>
@@ -2709,6 +2729,7 @@
           <button onclick="revealAll(this)" class="reveal-all-btn">Show All Answers</button><button onclick=
           "resetAll(this)" class="reset-btn">Reset</button>
         </div>
+        <div class="score-display"></div>
         <div class="question" data-answer="C">
           <p class="q-text"><strong>1.</strong> The voltage across a resistor carrying current can be calculated using
           the formula:</p>
@@ -2998,6 +3019,10 @@
             style="display:none">Answer: <strong>A</strong></span>
           </div>
         </div>
+<div class="qf-footer">
+        <button onclick="resetAll(this)" class="reset-btn">Reset</button>
+        <span class="score-display"></span>
+      </div>
       </section>
 
 <section id="sec-6" class="study-section">
@@ -3092,6 +3117,7 @@
         <button onclick="revealAll(this)" class="reveal-all-btn">Show All Answers</button><button
             onclick="resetAll(this)" class="reset-btn">Reset</button>
     </div>
+    <div class="score-display"></div>
     <div class="question" data-answer="A">
         <p class="q-text"><strong>1.</strong> The total resistance in a parallel circuit:</p>
         <ul class="options">
@@ -3533,6 +3559,10 @@
                 style="display:none">Answer: <strong>A</strong></span>
         </div>
     </div>
+<div class="qf-footer">
+  <button onclick="resetAll(this)" class="reset-btn">Reset</button>
+  <span class="score-display"></span>
+</div>
 </section>
 
 <section id="sec-7" class="study-section">
@@ -3594,6 +3624,7 @@
         <button onclick="revealAll(this)" class="reveal-all-btn">Show All Answers</button><button
             onclick="resetAll(this)" class="reset-btn">Reset</button>
     </div>
+    <div class="score-display"></div>
     <div class="question" data-answer="C">
         <p class="q-text"><strong>1.</strong> A transmitter power amplifier requires 30 mA at 300 volts. The DC input
             power is:</p>
@@ -3873,6 +3904,10 @@
                 style="display:none">Answer: <strong>A</strong></span>
         </div>
     </div>
+<div class="qf-footer">
+  <button onclick="resetAll(this)" class="reset-btn">Reset</button>
+  <span class="score-display"></span>
+</div>
 </section>
 
       <section id="sec-8" class="study-section">
@@ -3922,7 +3957,7 @@
         "formula">230 / 0.707 = 325.3V</span>
         <p><strong>Example 2</strong> Calculate the RMS current in an AC circuit, if it is known the current peaks at
         10A.</p><span class="formula">10A x 0.707 = 7.07A</span>
-      </section>
+</section>
       <section id="qf-8" class="question-section">
         <div class="qf-header">
           <span class="qf-tag">Q</span>Question File 8 – Alternating Current <span class="qf-count">(10
@@ -3932,6 +3967,7 @@
           <button onclick="revealAll(this)" class="reveal-all-btn">Show All Answers</button><button onclick=
           "resetAll(this)" class="reset-btn">Reset</button>
         </div>
+        <div class="score-display"></div>
         <div class="question" data-answer="A">
           <p class="q-text"><strong>1.</strong> An 'alternating current' is so called because:</p>
           <ul class="options">
@@ -4074,6 +4110,10 @@
             style="display:none">Answer: <strong>B</strong></span>
           </div>
         </div>
+<div class="qf-footer">
+        <button onclick="resetAll(this)" class="reset-btn">Reset</button>
+        <span class="score-display"></span>
+      </div>
       </section>
 
       <section id="sec-9" class="study-section">
@@ -4176,7 +4216,7 @@
         <p>The turns ratio is 100 – 10 or simplified down 10 – 1 Thus every 10 Volts on the primary creates 1 Volt on
         the secondary for this transformer. So 230V on the primary of this transformer would give us 23V on the
         secondary.</p>
-      </section>
+</section>
       <section id="qf-9" class="question-section">
         <div class="qf-header">
           <span class="qf-tag">Q</span>Question File 9 – Capacitors, Inductors & Resonance <span class="qf-count">(20
@@ -4186,6 +4226,7 @@
           <button onclick="revealAll(this)" class="reveal-all-btn">Show All Answers</button><button onclick=
           "resetAll(this)" class="reset-btn">Reset</button>
         </div>
+        <div class="score-display"></div>
         <div class="question" data-answer="A">
           <p class="q-text"><strong>1.</strong> The total capacitance of two or more capacitors in series is:</p>
           <ul class="options">
@@ -4469,6 +4510,10 @@
             style="display:none">Answer: <strong>B</strong></span>
           </div>
         </div>
+<div class="qf-footer">
+        <button onclick="resetAll(this)" class="reset-btn">Reset</button>
+        <span class="score-display"></span>
+      </div>
       </section>
 
 <section id="sec-10" class="study-section">
@@ -4522,6 +4567,7 @@
         <button onclick="revealAll(this)" class="reveal-all-btn">Show All Answers</button><button
             onclick="resetAll(this)" class="reset-btn">Reset</button>
     </div>
+    <div class="score-display"></div>
     <div class="question" data-answer="D">
         <p class="q-text"><strong>1.</strong> You can safely remove an unconscious person from contact with a high
             voltage source by:</p>
@@ -4681,6 +4727,10 @@
                 style="display:none">Answer: <strong>B</strong></span>
         </div>
     </div>
+<div class="qf-footer">
+  <button onclick="resetAll(this)" class="reset-btn">Reset</button>
+  <span class="score-display"></span>
+</div>
 </section>
 
       <section id="sec-11" class="study-section">
@@ -4734,7 +4784,7 @@
           "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAYEBAUEBAYFBQUGBgYHCQ4JCQgICRINDQoOFRIWFhUSFBQXGiEcFxgfGRQUHScdHyIjJSUlFhwpLCgkKyEkJST/2wBDAQYGBgkICREJCREkGBQYJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCT/wgARCACVAPIDAREAAhEBAxEB/8QAGwABAQADAQEBAAAAAAAAAAAAAAYFBAMCAQf/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAwIBBP/aAAwDAQACEAMQAAABpfHbn0AAAAAAAAAAAAANDvLaW5imaeegAAAAAAAAAAAABMUzTz1MUzTz0AMDvOIvP5vg9y3VQpq95k89AAA0eu5L2xxrP519z3djSoloCYpmnnqYpmnnoCarnn6o5Mx5kATOO0Pmtm8dAAA0Oo70xqK59GPMgapjfPSyhQTFM089TFM089Dl1G+3z0PQjCiANOFLPz0AAAl658eqPQE0WwMWZTxXy2ezFM089TFM089Capnc9cfZjCfLMAwGO2vjuAABHemWbtgCMLM1zYMR561sNzFM089TFM089a/UhXGQ9MhLGifpABgM9tfFcAACO9Us3XAEMVBBlmakKWEKYPeaeepimaeehjtMH7fPlwRhZgGBlu08tQAAI+8816JgRhZg5Gp5LU09TFM089TFM089AQ/plQWx6JoygMVxlvLamnoAADF65GeyFB0MQVAJmervyW+kxTNPPUxTNPPQHgi/TLZtjMHEwee5bzV3s9ymegAAaHWlrmB9Mczvm2Y0xstV3mtucCYpmnnqYpmnnoADQ6w289udz+O+zj124AAA5de+Ppg981O8yee5XPQBMUzTz1MUzTz0AAAAAAAAAAAAAJimaeepimaeegABA2xay3s8ADj1qd55BkM99gAxGuaGuU09AATFM089TFM089AADG65v577APhM0z353R7zK57mc9AA1+tjgAATFM089TFM089AAAAADj1141+u/HoAAAAAExTNPPUxTNPPQAAA1evB3OZr95753sd+Nbrh3nfnfptcAAACYpmnnqYpmnnoAAAYDfMfrnk7cezW62OPZju88ddOM5jWaz0AAATFM089SVM7/OgAADwewAAeTW7zb50eD2AAADA7zeR3yOXQAAAAAAAAAAAAA+mzx//EAC4QAAEEAQMEAQEIAwEAAAAAAAMFBAACARQ0ExUGECARMBIWIyQhIiU2QDEzNf/aAAgBAQABBQJWcuQ34FqcC1OBanAtTgWpwLU4FqcC1OBanAtTgWpwLU4FqcC1OBanAtTgWpwLU4FqcC1OBanAtTgWpwLU4FqcC1OBanAtR4VWYUitvf8AM7h2UVt76PlcLO/wrPJ0f5nTDimFN8wgHAnQmGc5p7vs/DKtsVCRaM6toXp50es06k2jVbxkvnuHZRW3vlVUCCsxYDY0jx8FjXwcJEkqSajhr7v9j9q67alKjrBvgldRy2E7EnuisHPjuHZRW3vgpKhGkUsWvjufb6AU0ApoBRJ/j3/uvGvwjTACpoBTQCibTA1/wpNNY1SnmvYTuHZRW3vjuK+apI6YHSXUmonPc36tvKh+E+9zfjdw+WP9ig3Ai2iJ+E5ncOyitvYYNT1X2Qwp+hFNAKPO3bO3ywnCT2nlU/cX3z+3uHy2DU3cGgFLIDwz9umYFRLZjKoBbUBnuHZRW3vhQbaxklONSx8dz7fzT86u+6x+Ve+WP9i8GLUAu3w2oxncOyitvfLyuUd9W2LVi4yM+DoBTQCihgLMfb7bLZn7qgqmTk6mPtaAU0AoxTytlbwb+Zd4xjGJ3Dsorb3zelSUsydpGW6s0cT/AHCGGHGVXLmyclaYif8A8/d/sXaaJRb610mwDsDnEcKLRrjGuV40aBZA8dw7KK299XLFq7n3bTYLt9NFmta0rBCqLHuQeCjxj7OIdDTnGfu2nRslMmnr3Dsorb3/ADO4dlFbe+wDlbMm36tvSxaUsJQbGzVSaXllJpS9bYvX0V85qliDnVevcOyitvfaye3uzpXFKec5+MFcDdOEmjjDJKvfDRx/6XqcNHIfbuHZRW3v1KhHTOMYxjTA+fjHz9TuHZRW3v0Mm/MaqmHNijrKugXHZQbYth4KoSOQBnzj4G6blhFFrRtl23xmpsWP9DuHZRW3v0LWIF46GV1YoSOyuWxNZambnaCI0jBkQR6ty/d9zbJ3ZW5zYOAt7Vrnqf0O4dlFstAOeups66mzrqbOups66mzrqbOups66mzKyl5t11NnXU2ddTZ11NnXU2ddTZZaS71AoozaddTZ11NmFlLrnrqbOups66mzrqbOups66mzrqbOupsWVRm6bS46EmlBNKCaUE0oJpQTSgmlBNKCaUE0oJpQTSgmlBNKCaUE0oJpQTSgmlBNKCaUE0oJpQTSgmlBNKCaUE0oJpgY8f/8QAIREAAgEEAwEBAQEAAAAAAAAAAAERAhIQITBBIDFAUQP/2gAIAQMBAT8BZs2bNmzZs2bNmzZs2bNmzZs2bNmzZs2bNjlYfX7asPry6oHWyWXMVf8AcLgeHX/C5ksuYq58VYfXiqqPScC4GVVT6oq6zVh9eG590PrgreuBOVirD6zV84KfvBX94P8APFWH1mpa4F94K/vBQsVYfWXwULfBWuChaxVh9eK137pXA/g1HqlTmrD68uj+eEpKaYFwMakdMeFTIlGasPr1BYi1c1qLEQvNWH1+2rD64F6kkn0/nurD69x7Qjvlqw+v21YfXFOZJzJJPFVh9cyEjrx3w1YqLkXIuRci5FyLkXIuRci5FyLkXIuRciUXIuRci5FyLkXIuRci5FyKmswQQQQQQQQQQQQQQQQQQQQQQQQQQQRj/8QAJREAAQMEAgICAwEAAAAAAAAAAQACETESAxAgMCFBEzJRIkBh/9oACAECAQE/AWAe1LVLVLVLVLVLVLVLVLVLVLVLVLVLVLVLVLVLVLVLVLVLVLVLVLVLVLVLULTplD/bjrplDxawuQxAK0KwJ2H8IiE7obXTcX5QY0K0I42lOxEcMddMoeGNk8nsuT69DapjI88sjPY3jrplDwAgRzzN99GJsnocIMax10yh3j+3Q/69GGnRmrrHXTKHQKxu/bofToxfXoylErHXTKHbTBnoynx0YT66Mpk6x10yh4Yn+ueQyehtUDPJ7rRvHXTKHizL+eBcBVPyXJ3Q2qa4tKa8Hg7IAiZ3jrplDyDiKL5XL5Hdwe4L5XIuJ4466ZQ/2466ZQ8yJKNeVpVpVp5Mqp8eeWOumUPO4zPKIlPiU+qFDyBjnjrplD2zqe7HXTKHphR41BVpUKDqCrTMKCo6cddMoen0EPHhTCB8L/EfKcVP7ShRSPCBXrpx10yhVjlY5WOVjlY5WOVjlY5WOVjlY5WOVjlY5WOVjkWuKscrHKxyscrHKxyscrHKxyscrHJjSDuSpKkqSpKkqSpKkqSpKkqSpKkqSpKkqSpKkqSpKkqSpKkqSpOv/8QAQRAAAQIDAQsJBgQGAwAAAAAAAQIDAAQRNCEQEpNzEzGSMwUiQbFRMiDB0XEwkWEUI1JyQmKBJENTQIOy8JSh4f/aAAgBAQAGPwKValVoQp5eDVQrFslsXFslsXFslsXFslsXFslsXFslsXFslsXFslsXFslsXFslsXFslsXFslsXFslsXFslsXFslsXFslsXFslsXFslsXFslsXFslsXFslsXFslsXFslsXFslsXFslsXFslsXFslsXFslsXCHXJmXWkrSkgN9N7duW7v61GWRz3t25bu7OZSlT8wdDSNP69EVdmESaPoaFT7Y456eUenPRWX3nNoP5zhiP3zAeZ/nM8nmIDrKwtB5RDtT/GX/l6EwR/LVzQFKIACakmC3uxjOAXC+5cQPGKzO83/tZ4BFydnh/eistP538kwK1/WBLzzRlXzor1VeR7CMsjnvbty3d2EScpQzTvLyNp6YucTirq3DpUbyVPVoo4IoL5nZIfL/jMDQR0iFOtmqVurI9voTGSVzQBVSZBu5T+cfCAlACUjQBeclU1zjYqbl4tPICkmE7um14aFbB08v5TfRlkc97duW7r6nFmiUDCMLn3trMmv2p5Bfl8rHWmMevxjrTGPX4x1pjHr8Ye3d/CWM8z7ukeg3JNGjk0rAr0J5YCEF8JHIH1+MdaYx6/GOtMY9fjE6kVoEcpr0X1IFxwcTZ6FQ0+esRRXny3kZZHPe3blu6+6lPWcIR7TCUJ0JFBe+HcdCHNPFEvlR2N3P8ALns1rehd0MS9zzJ7E99vheUhDiVKSaKFbovbwl+RLoXrC8jLI5727ct3XsFRWOXgWU80F0Kf4FpJwnlnl95jrzH/ACF+MdaYx6/GCsO4DNBdUorV/wBxLpbU4fm/iV3djd6Bp+KQfZ6D4P4mEke3sToUVjh/Csp6OiOtMY9fjDriDmW8M4K1KuxR2ZmnlfUXlDmMbx4n8EKQkUeWDo6a3YJSXTX63VK5zCMsjnvbty3dfeY5VpoPPkhtR66eBY94vy+V7CALqJNBJ+4+hKT34K5lw+46OxPfb4X1OrNEpFTGfcFFzKy8f1vIyyOe9u3Ld3YM2B+0mD82n4FfVAUk1B0EXmkspqUuVN2kdaYx6/GOtMY9fjACPiVvucLbYfXdPthQcuvFxWcVWtTX0JlCxUZsmDJzan0zCBUfPXRxPSLsdaYx6/GOtMY9fjEy+QcytNEkqqeS+JJqzNmr6xy/liguC8jLI5727ct3dgoWApJuEGCZMGZlNOZrxI8owc7m18qHOEi9VxxKB+Y0jNbtZVMr+vQhP6wZmZXn5tWlfIn3CHcs5/l6Exklc0N4VUOIFUOJ0pMYG8WiUckw2KpPn0RVl5C/I3vmvoHurUxgtJXJyp0uK66vKEssJwUC+jLI5727ct3dr57DbnvIuxcZUnycVGF8KFH85KowUpCQOQXiE8qir2+gptXVUKGAOi9VcoivSnh5outuH+4qKsyzaT00qfb2UZZHPe3blu7+tRlkc97duW7u26HVqLb6XC2o/hXd4Ya+wdkJUoAqrQQkNu4WFouGOF2tfcYwFPUV0UMBSdBujszRBoc2YZUxLPS6QTnCtVwimilemnaRlkc97duW7u2ZRSatHxrASNAFOxWJRxpWEC04ryFBEopT6C3mk8Obu6OmsMfvGAn6MG7p84k/Jzu7S2XOqsUPbRlkc97duW7vVKktoSVaSBpiguCK5lvVitLo9VGWRz3t25bu9EMAVODhE9H+90KYVcwUJXhH3kjug4TiRTTUwXUvNlsaVBVwQyM8hWeNEEKFIQ68ttnC+pYj5rzaPuVSK1uR8t9pdPpUDDkwHkLbb04CgYQC+0Cvq8Q4vKFskUUkA+Y9FGWRz3t25bu9GbU2jDcLSFIT00rc/wB6YffQw7TBZAChQqwV4Rh5fw682t1jrjSAbsOPBkqbDjSyAOtQH/z2RLviUUhPxBJuXTwUwiOS7DS3pdxYzGbolNSk1PPc9kNl5vRL4HTTiPD7IDB4XMxg0UacmiDmZRQV8IpOCtFK8SbkT3A+5nZYBBWgJqRXxia4ZjBmKYKUti6MEChr1YRdrgS9FfqRTmPooyyOe9u5xxQShL10nyi2NRbGotjUWxqLY1Fsai2NRbGoCvi2sIaDFsai2NRbGotjUWxqLY1BSqaZUk3CDywc1MNAm5WpMWxqLY1ClCaaqrTFsai2NRbGotjUWxqLY1Fsai2NQ22zMIWvPIuDzvcaEq8xGwa1RGwa1RGwa1RGwa1RGwa1RGwa1RGwa1RGwa1RGwa1RGwa1RGwa1RGwa1RGwa1RGwa1RGwa1RGwa1RGwa1RGwa1RGwa1RGwa1RGwa1RGwa1RGwa1RGwa1RGwa1RGwa1RGwa1RGwa1RGxb1b3//xAApEAEAAQIEBQUBAQEBAAAAAAABEQAhMfFBURBhoSCBcZEwwfCxQNHh/9oACAEBAAE/IXsHccWms71nes71nes71nes71nes71nes71nes71nes71nes71nes71nes71nes71nes71nes71neoaZVm6OHV/957q/aNGfV+TRTfUf9+9fSoXbvKsEhgH7LS9qYnc7/8AGsIf71IwwN/V8DKERhNLqP8AsQgCMWgZsuCuWtNYjsl51rfLRFJRfkn/AJTerE1J57te6v2CrGmXkfr9K0nrh3zwR44sL8VGqZ/5FJUwRPyX8H5u6hIg4Fkd+T9yAqMAgDgzluWzTXzw3eDYnM2abBzO+x+27Xur8UrxV2AloRt58J4+uJkuX+PF+/lq+NHGjMMPgWeNOF37f2gkLAAHg4n79C2C7vzb8ZY4G4lhWCCI7G3Ye6vxLpAPwT0mh6ghcjgyj4BYM88KYkZG94eyxbC9yEfXwZAGO9uzpPCluwbjmcLXsNNrn12PdX4BoocT+7GmpCGLEDBDXjrftlgpAfL7qzX0zpg+g9uzej4sp+DcD00Q7AaQG9eSOD9HIMosnE1fNbpt9hlCVA6KEcyJeWFPjhD9nRxe6vxYfyZPxjFX+gyMS0z/AHzx6D/HsOKEemGHtfx8Bn7BbLEegz2dJ45JBtyKSwEu2jpHv2PdX7DjkgRln9pQYDSiROB3iNKIeL9+hCl0/q1uuXA4Y+PgCnbXMJOpV5agBoPocX7+ECEvuaVdHHi1Co8OZgf38oEABAGnY91fsApGCkSnqi5+76nLOn4AbXS2v9UIJGSuf9ho/wACFD6rVVm0whZ2dCvxt3wfm7qOmM/NjlSwO7Qw5dVBJHoa+3B0umnoC9cmSsHyaetAl96u7u9r3V+4LfPRvONM7FuhD+1DW7yHhYo1gqCA4SqwzLqpfgm9lxbJFELgIKSSG5Sadbq/ip8E2YnrSYP4Wjyv3vdX/wB57q/eZi6Vy1tkJOY01Kyv8e0/hJNQxoei0bnSlAGaCLnSowJE5DHSmOkxNztUMDiMJape5BLtqJbnKPge6v3nXzLLcW5PrWCuh6HZIXWvag/WfxTE22rDIDwhGD/wowitYt0Tr8V+9t3DMV8bDD8L3V/lYXopH1b0CAAgDSoMRxmFLBBwGMPne6v8IZj6HZg97+6mKl4EFoPfqrRRiCROHvWBZ1X1mh0J2xILjPKPVKCGWlvO0zDRojsNvF60NCGEzpFCqAFbIGOHqUCXL7jtjjVzvJZvsqMRTfH19xM/je6v8IqDZMRRZeaBaGQqWEeXvUdFEIcfxt60GYdMiNg1RXQh/wAXEo+gPaWhd+ZLkjkf6UYGL5smnsgeKhPGFiGo6bVsiRI0E3gnk0FFwJktACMETfHSsE53XADAjj641iRKXd+NN54yHBBTNKzSs0rNKzSs0rNKzSl/CpI2HH+FZpWaVmlZpWaVmlF/FuANqUQoJMgwJdOVZpWaUfOsuW9orNKzSs0rNKzSs0rNKzSkz5J7xwCgCYRMf7Ukkkkkkkkkkkkkkkkkkkkkkkkkkkhkhpy8P//aAAwDAQACAAMAAAAQ5JJJJJJJJJJJJJLZbbbbbbbbbbbbbbLLbf8ArJW222qDtG2WW2JJJ42228xJJ2yy2TIJIG222JIJI2WWyJBJO2229JJJIyy6ZBJJG223JIIIkWW5JJJI222/JJIMyy27JJEW222bJJE2WW2yBF62228DJOmyy22912W223f4222WW2222222222222yy222A23ST223W22WW22y226t223G22yy222222WO222222WW2224rLh8VG222yy2222pFZby+2222XpJJJFJJIjIpJJJK/JJJJJJJJJJJJJIH/8QAIBEAAgEEAwEBAQAAAAAAAAAAAQARMRBhUSEgMEFAcf/aAAgBAwEBPxAyIAY3Y3Y3Y3Y3Y3Y3Y3Y3Y3Y3Y3Y3Y3Y3Y3Y3Y3Y3Y3Y3Y3Y3Y3Y3Y3Y3Y3S5ibV/tU2r6hIhzIB9sgQRI8VBfiMIk+uRAvqLgelNq+ikFexyTkT4UFoBTt9F6bV3ExyyJPvIIeHMWptXccF4FAeB0eBcEWptXYRLF4KX4KaUCGm1dwSCPCSXhSPhBZTavohMOwEsQ8BkkhQe0q9Nq+giUw56CUIeX3xUFCHKaroepAEC9Nq+wgauFAvlwI8CJ4uSfLIFQdabV/tU2r7gSBz9aOsoE0Yse1ZA5EDtTavujEI6kgkEImAnwOU0diJEd6bV+qBaB7U2r8U8w1QyGRVhwwiSkgVsANEjEsNs8x402r8XIJhIJk/xIJJ40kGZfoMIEVCQHlg8U8ngfEgmf4kHnPkpsUEEuRyORyORyORyOVyORyORyORyoHQuRyOVyORyORyORyORKEA2IlgwYMGDBgwYMGDBgwYMGDBgwYMGDBgwYMGFv//EACURAAIBAwQDAAIDAAAAAAAAAAEAYRExECEgcTChQVFAsYHB0f/aAAgBAgEBPxAgE+jCWEsJYSwlhLCWEsJYSwlhLCWEsJYSwlhLCWEsJYSwlhLCWEsJYSiegGPA/NucHHgbdc9N61YUluEFzSFQtw4HRYSKmgSnV+kYH0jrI1Gy5wceBsq6myBTQbQBQ3QIoMdFhHrX3U81zg48DIBJoEYg32B6NRPreRVr+Fzg48DI1DoGpdAUr6B0HFzg48DBBZMaD+h0Fr4/AqdAEhu3ODjwM0DoU6fvRqnofwuLnBx4GyoK77iQBUuudBkCQjGo3Dkzc4OPA2A01CA6XoNciakk0CzcOB0WGqA2XZpo1Kc6nNzg48DdcDIkntJrfBJN+gGhqM2QsjdjtucHHgfm3ODjwN4AUuKNzaATqkFwkXpBtaJFNNtlOpVXdc4OPA3gFC6TU12ggA/QlU01qgKtH9LcQqjfc4OPA7SRvir73XODjwOmyrXqQCUiNKI1NLNdaDVBLDBFcIIFDEnQD03ODjwOkAGp9TFBH7+kAAFfqCgV11QaA1ev7TFQB9oSDQ+0hFVCmo+/9QDgUAAtok+fTc4OBJAPjExMTExMTExPooxMTExMTEgWoDcgxMTAxMTExMTExMSWEj1gEizMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMyY//xAAoEAEAAQIFAwUBAQEBAAAAAAABEQAh8FExQcEQYXHR8SCBMJGhQOH/2gAIAQEAAT8QgSBRxEx9Vj7msfc1j7msfc1j7msfc1j7msfc1j7msfc1j7msfc1j7msfc1j7msfc1j7msfc1j7msfc1j7msfc1j7msfc1j7msfc1j7msfc0mRKTgyFemK5/+3FcvTFc/xmM0LBk6G5LeLwlbqxACZaTusolsl0T6ALFZlYOnxhWbLC7hbZsA70fHZmBzHcTcYTelJEZUwAh4D8E0uhCiJGgBjPCko2A1lpDCYFGsbQdo8Jel8VqD2EAo7pNJXB3lxmWqHL+iPlY0jCbC/TKlyexK2+GK5emK5/gpYQGdE8bM3sUYV3VwuoyxOhP9ZWjBruVYt8iz0SSGrDf3B9RjfNrfUiyxZCFbJNm/40nbe7teXcMRG/mgTYFgtADQ6KXAhBHZu0dDHBoLuyahmUIpnbpv5SIzsbjriuXpiufr37wSyfwan+POpBjtoD3LtOpOTCNmHzHUsWTIuOo1tFMReUwlVYbhkK3fwUTaJub+OA9lQdcGs7BD6DqWLHgxF3Vd1fa9RfHiUXFjtLZclpApZPCvQ2lFDJOmK5emK5+syIL4Q+4Puuw4eAAP4dCiK2P0Q9XZRoRyADImt8Lb3IN1xc//AFp+FrCSIdxn7W/LYeghkTCahffoocZO60O2XpiuXpiufoSfoZGCXaF2yxoxYoGOKebGCNkMSbNDknQRY8GgKxcFGPNmxUzjNJr0gRraku/wmMUOeYvofw2C7jMb/fgVsezqDdZOyx0LSM8T8RcW7onNoKlMhngADzL3p22iaiMwKRJhYgoS6AJDsAXchrFcvTFc/UdXO6CMp7BX1S+AFhwbLBDs+f4EsO2zk9z6lfga7LMv0ykl8fPYTWTAEsd6mpIGodviKOjFcvTFc/we3IRNqBe6zG67woEMiCRIiaj0NYposRRUvc0v1LFphqQ32GDQkV+t6WwlGkJqrscnd/BsAnNlt5AfqoA6PO3GEsWQWjsh0LFpsAov1SZzFt1TiYl4lO6pdNI8E34h4AWANjpiuXpiuf4PHuKSIRHUpa+Ooplm72bss0liqB8IsXyaMGQkRkaanpMY/qlFMLLXzaPoROzQiNoJceEMTZciU/IHStDa3jCI7yCd3ZhGRbJdgRJzLXdDeh5gmAPOo+zpmwKz4m/xQ2aGbWbdN22i3ECo2C+6bc3eI64rl6Yrn+QIDEAkO2l9NCZolmDOKhpGl++Ff4o9xQeTsFjoHwuqXv1Sv4FshdQqFDtZqUGJJkEUDAIQjolEy3mRObKT5pttxuBk11Kgv0Uo/vxxXL0xXP8A9uK5emK5/m91daqHI8LncpQyBVlWPx1B7GFFngT+1BRPRpkiNkRvNXhMThTFmzWkRLJTLsbo7VZwyCSEjDfR+LavTIncTSjzYZbmRTiBgu3vD8cVy9MVz/OZBdvYQbEUjtR7JObLBB/h8AaEBQJWMijcyRCRiTVKIdG1TyHDCWsFy0uqNCabWsteE212k5tPnPNpRTAQw7fPFcvTFc/6rZGUh7gn7Ub8Q8ALAGxQQCLATjnMVJ8gcLLWHaf1xXL0xXP+I5UU6DXOayPbIBmIWBrqrv8A0gUuUmSQuCy2lpntTF/RyDUFgiTVpcoslIwhGRNhvVkj7ISiBkeFosCAhokG41RjOKBosJbtUzlSq8cSDJkwFzKTOn0KY4G2IS2JvRpSA4HRC2Paac7LeRJA+Hi8QOz8cVy9MVz/AIlrdhCilqIbwSM6vNHo5jSwwJiViaaQGY51HcBMgGNr0cICSWWRR1YBLFaBQmhwkyQS6AgmCebwJMWnYKnSyRandRkRKodGRosmSnweTAACiwYktia0s3dZcIotEkRgUmuxolQZYsDO4kFDU7MRjDVTtwEwuaYUl3uy4sEt7Td0n8cVy9N5iLi3a9y+le5fSvcvpXuX0r3L6V7l9K9y+le5fSlvLqKBDTR0OxkV7l9K9y+le5fSvcvpXuX0r3L6U6Y5lEhQlxNqfLIIzaqgliUE6V7l9K9y+lFZaWRgE22AK9y+le5fSvcvpXuX0r3L6V7l9K9y+le5fSg9I0KBl06NGmQCu0lYw4rGHFYw4rGHFYw4rGHFYw4rGHFYw4rGHFYw4rGHFYw4rGHFYw4rGHFYw4rGHFYw4rGHFYw4rGHFYw4rGHFYw4rGHFYw4rGHFFHBIgo/zp//2Q=="
           alt="Question diagram" style="max-width:484px;width:100%">
         </figure>
-      </section>
+</section>
       <section id="qf-11" class="question-section">
         <div class="qf-header">
           <span class="qf-tag">Q</span>Question File 11 – Semiconductors <span class="qf-count">(20 questions)</span>
@@ -4743,6 +4793,7 @@
           <button onclick="revealAll(this)" class="reveal-all-btn">Show All Answers</button><button onclick=
           "resetAll(this)" class="reset-btn">Reset</button>
         </div>
+        <div class="score-display"></div>
         <div class="question" data-answer="B">
           <p class="q-text"><strong>1.</strong> The basic semiconductor amplifying device is a:</p>
           <ul class="options">
@@ -5012,6 +5063,10 @@
             style="display:none">Answer: <strong>D</strong></span>
           </div>
         </div>
+<div class="qf-footer">
+        <button onclick="resetAll(this)" class="reset-btn">Reset</button>
+        <span class="score-display"></span>
+      </div>
       </section>
 
       <section id="sec-12" class="study-section">
@@ -5055,7 +5110,7 @@
           </p>
         </figure>
 
-      </section>
+</section>
       <section id="qf-12" class="question-section">
         <div class="qf-header">
           <span class="qf-tag">Q</span>Question File 12 – Device Recognition <span class="qf-count">(10 questions)</span>
@@ -5257,6 +5312,10 @@
             style="display:none">Answer: <strong>B</strong></span>
           </div>
         </div>
+<div class="qf-footer">
+        <button onclick="resetAll(this)" class="reset-btn">Reset</button>
+        <span class="score-display"></span>
+      </div>
       </section>
 
       <section id="sec-13" class="study-section">
@@ -5308,7 +5367,7 @@
         reflected power returning from the aerial, and compares the 2 values to provide a SWR
         value</p>
 
-      </section>
+</section>
       <section id="qf-13" class="question-section">
         <div class="qf-header">
           <span class="qf-tag">Q</span>Question File 13 – Meters and Measuring <span class="qf-count">(10 questions)</span>
@@ -5317,6 +5376,7 @@
           <button onclick="revealAll(this)" class="reveal-all-btn">Show All Answers</button><button onclick=
           "resetAll(this)" class="reset-btn">Reset</button>
         </div>
+        <div class="score-display"></div>
         <div class="question" data-answer="A">
           <p class="q-text"><strong>1.</strong> An ohmmeter measures the:</p>
           <ul class="options">
@@ -5468,6 +5528,10 @@
             style="display:none">Answer: <strong>C</strong></span>
           </div>
         </div>
+<div class="qf-footer">
+        <button onclick="resetAll(this)" class="reset-btn">Reset</button>
+        <span class="score-display"></span>
+      </div>
       </section>
 
       <section id="sec-14" class="study-section">
@@ -5499,7 +5563,7 @@
           <li>1 dBm = 1 Milliwatt</li>
           <li>1 dBW = 1 Watt</li>
         </ul>
-      </section>
+</section>
       <section id="qf-14" class="question-section">
         <div class="qf-header">
           <span class="qf-tag">Q</span>Question File 14 – Decibels <span class="qf-count">(10 questions)</span>
@@ -5508,6 +5572,7 @@
           <button onclick="revealAll(this)" class="reveal-all-btn">Show All Answers</button><button onclick=
           "resetAll(this)" class="reset-btn">Reset</button>
         </div>
+        <div class="score-display"></div>
         <div class="question" data-answer="C">
           <p class="q-text"><strong>1.</strong> The input to an amplifier is 1 watt and the output 10 watts. This is an
           increase of:</p>
@@ -5649,6 +5714,10 @@
             style="display:none">Answer: <strong>B</strong></span>
           </div>
         </div>
+<div class="qf-footer">
+        <button onclick="resetAll(this)" class="reset-btn">Reset</button>
+        <span class="score-display"></span>
+      </div>
       </section>
 
       <section id="sec-15" class="study-section">
@@ -5729,7 +5798,7 @@
         meter, while each separate needle indicates the forward and reflected
         power on its own arc-scale. An example is in the photograph.
         </p>
-      </section>
+</section>
       <section id="qf-15" class="question-section">
         <div class="qf-header">
           <span class="qf-tag">Q</span>Question File 15 – Station Components <span class="qf-count">(10
@@ -5739,6 +5808,7 @@
           <button onclick="revealAll(this)" class="reveal-all-btn">Show All Answers</button><button onclick=
           "resetAll(this)" class="reset-btn">Reset</button>
         </div>
+        <div class="score-display"></div>
         <div class="question" data-answer="B">
           <p class="q-text"><strong>1.</strong> In the block diagram shown, the "linear amplifier" is:</p>
         <figure class="doc-img qf-img">
@@ -5956,6 +6026,10 @@
             style="display:none">Answer: <strong>C</strong></span>
           </div>
         </div>
+<div class="qf-footer">
+        <button onclick="resetAll(this)" class="reset-btn">Reset</button>
+        <span class="score-display"></span>
+      </div>
       </section>
 
 <section id="sec-16" class="study-section">
@@ -6145,6 +6219,7 @@
         <button onclick="revealAll(this)" class="reveal-all-btn">Show All Answers</button><button
             onclick="resetAll(this)" class="reset-btn">Reset</button>
     </div>
+    <div class="score-display"></div>
     <div class="question" data-answer="C">
         <p class="q-text"><strong>1.</strong> In the block diagram of the receiver shown, the "RF amplifier":</p>
         <figure class="doc-img qf-img">
@@ -6511,6 +6586,10 @@
                 style="display:none">Answer: <strong>D</strong></span>
         </div>
     </div>
+<div class="qf-footer">
+  <button onclick="resetAll(this)" class="reset-btn">Reset</button>
+  <span class="score-display"></span>
+</div>
 </section>
 
       <section id="sec-17" class="study-section">
@@ -6558,7 +6637,7 @@ There are many types of audio amplifier. The circuit
 shown here is to show the principles. It is typical of
 that in a very simple radio - with a small speaker
 and low audio output.</p>
-      </section>
+</section>
       <section id="qf-17" class="question-section">
         <div class="qf-header">
           <span class="qf-tag">Q</span>Question File 17 – Receiver Fundamentals <span class="qf-count">(30
@@ -6568,6 +6647,7 @@ and low audio output.</p>
           <button onclick="revealAll(this)" class="reveal-all-btn">Show All Answers</button><button onclick=
           "resetAll(this)" class="reset-btn">Reset</button>
         </div>
+        <div class="score-display"></div>
         <div class="question" data-answer="A">
           <p class="q-text"><strong>1.</strong> The frequency stability of a receiver is its ability to:</p>
           <ul class="options">
@@ -7013,6 +7093,10 @@ and low audio output.</p>
             style="display:none">Answer: <strong>B</strong></span>
           </div>
         </div>
+<div class="qf-footer">
+        <button onclick="resetAll(this)" class="reset-btn">Reset</button>
+        <span class="score-display"></span>
+      </div>
       </section>
 
       <section id="sec-18" class="study-section">
@@ -7079,7 +7163,7 @@ and low audio output.</p>
         The Frequency Multiplier stage is an RF amplifier with a tuned output - the output tuned to a harmonic of the
         input signal
         </p>
-      </section>
+</section>
       <section id="qf-18" class="question-section">
         <div class="qf-header">
           <span class="qf-tag">Q</span>Question File 18 – Transmitter Block Diagrams <span class="qf-count">(20
@@ -7498,6 +7582,10 @@ and low audio output.</p>
             style="display:none">Answer: <strong>B</strong></span>
           </div>
         </div>
+<div class="qf-footer">
+        <button onclick="resetAll(this)" class="reset-btn">Reset</button>
+        <span class="score-display"></span>
+      </div>
       </section>
 
       <section id="sec-19" class="study-section">
@@ -7513,7 +7601,7 @@ and low audio output.</p>
         The RF output power from an amplifier is less than the total DC input power and signal input power to the
         amplifier. The difference is energy loss and appears as heat. Cooling facilities such as heatsinks, fans etc. -
         are used in solid-state power or valve amplifiers for protection from over-heating.</p>
-      </section>
+</section>
       <section id="qf-19" class="question-section">
         <div class="qf-header">
           <span class="qf-tag">Q</span>Question File 19 – Transmitter Theory <span class="qf-count">(10
@@ -7523,6 +7611,7 @@ and low audio output.</p>
           <button onclick="revealAll(this)" class="reveal-all-btn">Show All Answers</button><button onclick=
           "resetAll(this)" class="reset-btn">Reset</button>
         </div>
+        <div class="score-display"></div>
         <div class="question" data-answer="A">
           <p class="q-text"><strong>1.</strong> Morse code is usually transmitted by radio as:</p>
           <ul class="options">
@@ -7678,6 +7767,10 @@ and low audio output.</p>
             style="display:none">Answer: <strong>C</strong></span>
           </div>
         </div>
+<div class="qf-footer">
+        <button onclick="resetAll(this)" class="reset-btn">Reset</button>
+        <span class="score-display"></span>
+      </div>
       </section>
 
       <section id="sec-20" class="study-section">
@@ -7711,7 +7804,7 @@ and low audio output.</p>
         undesired oscillation without affecting the primary function of the circuit. A typical solution is
         to add a VHF choke (an inductor) or a small-value resistor (a "stopper") somewhere close
         to the active component in the offending circuit.</p>
-      </section>
+</section>
       <section id="qf-20" class="question-section">
         <div class="qf-header">
           <span class="qf-tag">Q</span>Question File 20 – Harmonics and Parasitics <span class="qf-count">(20
@@ -7721,6 +7814,7 @@ and low audio output.</p>
           <button onclick="revealAll(this)" class="reveal-all-btn">Show All Answers</button><button onclick=
           "resetAll(this)" class="reset-btn">Reset</button>
         </div>
+        <div class="score-display"></div>
         <div class="question" data-answer="B">
           <p class="q-text"><strong>1.</strong> One of the harmonics of a signal transmitted at 3525 kHz would be
           expected to occur at:</p>
@@ -8024,6 +8118,10 @@ and low audio output.</p>
             style="display:none">Answer: <strong>C</strong></span>
           </div>
         </div>
+<div class="qf-footer">
+        <button onclick="resetAll(this)" class="reset-btn">Reset</button>
+        <span class="score-display"></span>
+      </div>
       </section>
 
       <section id="sec-21" class="study-section">
@@ -8185,7 +8283,7 @@ Similarly, a power supply for an amateur radio transceiver, (to substitute for a
 battery), must be chosen with care to ensure that the maximum load current can be
 supplied at the correct voltage rating without the voltage "sagging" when the load is
 applied.</p>
-      </section>
+</section>
       <section id="qf-21" class="question-section">
         <div class="qf-header">
           <span class="qf-tag">Q</span>Question File 21 – Power Supplies <span class="qf-count">(10 questions)</span>
@@ -8194,6 +8292,7 @@ applied.</p>
           <button onclick="revealAll(this)" class="reveal-all-btn">Show All Answers</button><button onclick=
           "resetAll(this)" class="reset-btn">Reset</button>
         </div>
+        <div class="score-display"></div>
         <div class="question" data-answer="B">
           <p class="q-text"><strong>1.</strong> A mains operated DC power supply:</p>
           <ul class="options">
@@ -8344,6 +8443,10 @@ applied.</p>
             style="display:none">Answer: <strong>D</strong></span>
           </div>
         </div>
+<div class="qf-footer">
+        <button onclick="resetAll(this)" class="reset-btn">Reset</button>
+        <span class="score-display"></span>
+      </div>
       </section>
 
       <section id="sec-22" class="study-section">
@@ -8418,7 +8521,7 @@ which blows the mains fuse and effectively turns the supply off.
 supply. This is to reduce the current through the regulator to a low value under excessive
 load or short-circuit conditions to protect the series pass transistor from excessive power
 dissipation and possible destruction.</p>
-      </section>
+</section>
       <section id="qf-22" class="question-section">
         <div class="qf-header">
           <span class="qf-tag">Q</span>Question File 22 – Regulated Power Supplies <span class="qf-count">(10
@@ -8428,6 +8531,7 @@ dissipation and possible destruction.</p>
           <button onclick="revealAll(this)" class="reveal-all-btn">Show All Answers</button><button onclick=
           "resetAll(this)" class="reset-btn">Reset</button>
         </div>
+        <div class="score-display"></div>
         <div class="question" data-answer="B">
           <p class="q-text"><strong>1.</strong> The block marked 'Filter' in the diagram is to:</p>
         <figure class="doc-img qf-img">
@@ -8624,6 +8728,10 @@ dissipation and possible destruction.</p>
             style="display:none">Answer: <strong>D</strong></span>
           </div>
         </div>
+<div class="qf-footer">
+        <button onclick="resetAll(this)" class="reset-btn">Reset</button>
+        <span class="score-display"></span>
+      </div>
       </section>
 
       <section id="sec-23" class="study-section">
@@ -9031,7 +9139,7 @@ dissipation and possible destruction.</p>
             <tr><td>88</td><td>love and kisses</td></tr>
           </tbody>
         </table>
-      </section>
+</section>
       <section id="qf-23" class="question-section">
         <div class="qf-header">
           <span class="qf-tag">Q</span>Question File 23 – General Operating Procedures <span class="qf-count">(10
@@ -9041,6 +9149,7 @@ dissipation and possible destruction.</p>
           <button onclick="revealAll(this)" class="reveal-all-btn">Show All Answers</button><button onclick=
           "resetAll(this)" class="reset-btn">Reset</button>
         </div>
+        <div class="score-display"></div>
         <div class="question" data-answer="A">
           <p class="q-text"><strong>1.</strong> The correct order for callsigns in a callsign exchange at the start and
           end of a transmission is:</p>
@@ -9200,6 +9309,10 @@ dissipation and possible destruction.</p>
             style="display:none">Answer: <strong>B</strong></span>
           </div>
         </div>
+<div class="qf-footer">
+        <button onclick="resetAll(this)" class="reset-btn">Reset</button>
+        <span class="score-display"></span>
+      </div>
       </section>
 
       <section id="sec-24" class="study-section">
@@ -9336,7 +9449,7 @@ dissipation and possible destruction.</p>
         Various DMR repeater networks are a series of selected DMR (Digital Mobile Radio)
         repeaters and home based hot spots connected together using TCP/IP (or ethernet)
         communication techniques, often (but not always) using the internet.</p>
-      </section>
+</section>
       <section id="qf-24" class="question-section">
         <div class="qf-header">
           <span class="qf-tag">Q</span>Question File 24 – Operating Procedures and Practice <span class="qf-count">(20
@@ -9346,6 +9459,7 @@ dissipation and possible destruction.</p>
           <button onclick="revealAll(this)" class="reveal-all-btn">Show All Answers</button><button onclick=
           "resetAll(this)" class="reset-btn">Reset</button>
         </div>
+        <div class="score-display"></div>
         <div class="question" data-answer="B">
           <p class="q-text"><strong>1.</strong> You are mobile and talking through a VHF repeater. The other station
           reports that you keep "dropping out". This means:</p>
@@ -9664,6 +9778,10 @@ dissipation and possible destruction.</p>
             style="display:none">Answer: <strong>A</strong></span>
           </div>
         </div>
+<div class="qf-footer">
+        <button onclick="resetAll(this)" class="reset-btn">Reset</button>
+        <span class="score-display"></span>
+      </div>
       </section>
 
       <section id="sec-25" class="study-section">
@@ -9706,7 +9824,7 @@ dissipation and possible destruction.</p>
           <li>QRQ for Quicker</li>
           <li>QRS for Slower</li>
         </ul>
-      </section>
+</section>
       <section id="qf-25" class="question-section">
         <div class="qf-header">
           <span class="qf-tag">Q</span>Question File 25 – Q Codes <span class="qf-count">(10 questions)</span>
@@ -9715,6 +9833,7 @@ dissipation and possible destruction.</p>
           <button onclick="revealAll(this)" class="reveal-all-btn">Show All Answers</button><button onclick=
           "resetAll(this)" class="reset-btn">Reset</button>
         </div>
+        <div class="score-display"></div>
         <div class="question" data-answer="C">
           <p class="q-text"><strong>1.</strong> The signal "QRM" means:</p>
           <ul class="options">
@@ -9849,6 +9968,10 @@ dissipation and possible destruction.</p>
             style="display:none">Answer: <strong>B</strong></span>
           </div>
         </div>
+<div class="qf-footer">
+        <button onclick="resetAll(this)" class="reset-btn">Reset</button>
+        <span class="score-display"></span>
+      </div>
       </section>
 
       <section id="sec-26" class="study-section">
@@ -10069,7 +10192,7 @@ transceiver.
 With a station comprising a separate transmitter and receiver, a change-over relay can be
 fitted to switch the antenna feeder between the two items. It is usual - and desirable - for
 the unit not being used to be disabled.</p>
-      </section>
+</section>
       <section id="qf-26" class="question-section">
         <div class="qf-header">
           <span class="qf-tag">Q</span>Question File 26 – Transmission Lines <span class="qf-count">(20
@@ -10079,6 +10202,7 @@ the unit not being used to be disabled.</p>
           <button onclick="revealAll(this)" class="reveal-all-btn">Show All Answers</button><button onclick=
           "resetAll(this)" class="reset-btn">Reset</button>
         </div>
+        <div class="score-display"></div>
         <div class="question" data-answer="C">
           <p class="q-text"><strong>1.</strong> Any length of transmission line may be made to appear as an infinitely
           long line by:</p>
@@ -10378,6 +10502,10 @@ the unit not being used to be disabled.</p>
             style="display:none">Answer: <strong>D</strong></span>
           </div>
         </div>
+<div class="qf-footer">
+        <button onclick="resetAll(this)" class="reset-btn">Reset</button>
+        <span class="score-display"></span>
+      </div>
       </section>
 
       <section id="sec-27" class="study-section">
@@ -10538,7 +10666,7 @@ the unit not being used to be disabled.</p>
         its power-handing capacity. The rating for full-power operation may be for only a short time so be aware of the
         time and power ratings of your dummy load before testing for long periods at full power. The things can get
         very hot!</p>
-      </section>
+</section>
       <section id="qf-27" class="question-section">
         <div class="qf-header">
           <span class="qf-tag">Q</span>Question File 27 – Antennas <span class="qf-count">(40 questions)</span>
@@ -10547,6 +10675,7 @@ the unit not being used to be disabled.</p>
           <button onclick="revealAll(this)" class="reveal-all-btn">Show All Answers</button><button onclick=
           "resetAll(this)" class="reset-btn">Reset</button>
         </div>
+        <div class="score-display"></div>
         <div class="question" data-answer="A">
           <p class="q-text"><strong>1.</strong> In this diagram the item U corresponds to the:</p>
         <figure class="doc-img qf-img">
@@ -11158,6 +11287,10 @@ the unit not being used to be disabled.</p>
             style="display:none">Answer: <strong>A</strong></span>
           </div>
         </div>
+<div class="qf-footer">
+        <button onclick="resetAll(this)" class="reset-btn">Reset</button>
+        <span class="score-display"></span>
+      </div>
       </section>
 
       <section id="sec-28" class="study-section">
@@ -11296,7 +11429,7 @@ the unit not being used to be disabled.</p>
         through and are lost into space. The critical angle varies with the degree of ionisation and generally results
         in larger skip zones at night. The area between the limit of maximum range by direct wave or ground wave, and
         the maximum skip distance by skywave is known as the skip zone.</p>
-      </section>
+</section>
       <section id="qf-28" class="question-section">
         <div class="qf-header">
           <span class="qf-tag">Q</span>Question File 28 – Propagation <span class="qf-count">(50 questions)</span>
@@ -11305,6 +11438,7 @@ the unit not being used to be disabled.</p>
           <button onclick="revealAll(this)" class="reveal-all-btn">Show All Answers</button><button onclick=
           "resetAll(this)" class="reset-btn">Reset</button>
         </div>
+        <div class="score-display"></div>
         <div class="question" data-answer="B">
           <p class="q-text"><strong>1.</strong> A 'skip zone' is:</p>
           <ul class="options">
@@ -12038,6 +12172,10 @@ the unit not being used to be disabled.</p>
             style="display:none">Answer: <strong>B</strong></span>
           </div>
         </div>
+<div class="qf-footer">
+        <button onclick="resetAll(this)" class="reset-btn">Reset</button>
+        <span class="score-display"></span>
+      </div>
       </section>
 
       <section id="sec-29" class="study-section">
@@ -12110,7 +12248,7 @@ the unit not being used to be disabled.</p>
           <li>Band Stop in 4.</li>
         </ul>
         <p>These diagrams are for demonstration only. Practical filters exhibit considerable differences and more pronounced characteristics.</p>
-      </section>
+</section>
       <section id="qf-29" class="question-section">
         <div class="qf-header">
           <span class="qf-tag">Q</span>Question File 29 – Interference and Filtering <span class="qf-count">(30
@@ -12120,6 +12258,7 @@ the unit not being used to be disabled.</p>
           <button onclick="revealAll(this)" class="reveal-all-btn">Show All Answers</button><button onclick=
           "resetAll(this)" class="reset-btn">Reset</button>
         </div>
+        <div class="score-display"></div>
         <div class="question" data-answer="B">
           <p class="q-text"><strong>1.</strong> Electromagnetic compatibility is:</p>
           <ul class="options">
@@ -12592,6 +12731,10 @@ the unit not being used to be disabled.</p>
             style="display:none">Answer: <strong>D</strong></span>
           </div>
         </div>
+<div class="qf-footer">
+        <button onclick="resetAll(this)" class="reset-btn">Reset</button>
+        <span class="score-display"></span>
+      </div>
       </section>
 
       <section id="sec-30" class="study-section">
@@ -12761,7 +12904,7 @@ the unit not being used to be disabled.</p>
         error correction system (designed for the conditions) will provide significant improvements.
         The best solution is to choose an appropriate mode for the conditions prevailing at the
         time.</p>
-      </section>
+</section>
       <section id="qf-30" class="question-section">
         <div class="qf-header">
           <span class="qf-tag">Q</span>Question File 30 – Digital Communications <span class="qf-count">(10
@@ -12771,6 +12914,7 @@ the unit not being used to be disabled.</p>
           <button onclick="revealAll(this)" class="reveal-all-btn">Show All Answers</button><button onclick=
           "resetAll(this)" class="reset-btn">Reset</button>
         </div>
+        <div class="score-display"></div>
         <div class="question" data-answer="A">
           <p class="q-text"><strong>1.</strong> In the block diagram shown, the block designated "modem" is a:</p>
         <figure class="doc-img qf-img">
@@ -12917,6 +13061,10 @@ the unit not being used to be disabled.</p>
             style="display:none">Answer: <strong>C</strong></span>
           </div>
         </div>
+<div class="qf-footer">
+        <button onclick="resetAll(this)" class="reset-btn">Reset</button>
+        <span class="score-display"></span>
+      </div>
       </section>
 
 </div>

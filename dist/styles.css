@@ -440,6 +440,18 @@ body {
   font-size: 12px;
   color: var(--text-muted);
 }
+.qf-controls + .score-display {
+  margin-bottom: 12px;
+}
+
+.qf-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
 
 .question {
   background: var(--surface);

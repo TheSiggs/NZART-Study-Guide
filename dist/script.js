@@ -30,16 +30,16 @@ function resetAll(btn) {
     const rb = q.querySelector('.reveal-btn'); if (rb) rb.style.display = '';
     const al = q.querySelector('.answer-label'); if (al) al.style.display = 'none';
   });
-  const sd = sec.querySelector('.score-display'); if (sd) sd.textContent = '';
+  sec.querySelectorAll('.score-display').forEach(el => el.textContent = '');
 }
 
 function updateScore(sec) {
-  const sd = sec.querySelector('.score-display'); if (!sd) return;
   const total = sec.querySelectorAll('.question').length;
   const revealed = sec.querySelectorAll('.question.revealed').length;
   const correct = sec.querySelectorAll('.question.correct').length;
   const wrong = sec.querySelectorAll('.question.wrong').length;
-  if (revealed > 0) sd.textContent = revealed+'/'+total+' answered · '+correct+' correct · '+wrong+' wrong';
+  const text = revealed > 0 ? revealed+'/'+total+' answered · '+correct+' correct · '+wrong+' wrong' : '';
+  sec.querySelectorAll('.score-display').forEach(el => el.textContent = text);
 }
 
 function initNavObserver() {
