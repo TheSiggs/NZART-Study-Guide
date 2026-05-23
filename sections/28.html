@@ -1,0 +1,879 @@
+      <section id="sec-28" class="study-section">
+        <h2 class="section-title"><span class="sec-num">28</span>Propagation</h2>
+        <h4 class="doc-h4"><strong>The spectrum</strong></h4>
+        <p>Amateur Radio is all about the transmission of radio waves from place-to-place without
+        wires. Signals travel from the transmitting antenna to the receiving antenna in different ways depending on the
+        frequency used. Some frequencies use the ionosphere to bounce signals around the world while other frequencies
+        can only be used for line-of-sight operations. Radio waves are part of the spectrum of electromagnetic
+        radiation, with infrared, light, ultraviolet, x-rays and cosmic rays at the extreme upper frequencies. Radio
+        waves further subdivide into different frequency ranges. All electromagnetic radiation travels at the same
+        speed, commonly referred to as the speed of light, c = 3 x 108 metres per second or 300 000 km per second in a
+        vacuum. Electromagnetic radiation consists of two waves travelling together, the magnetic and the electric,
+        with the planes of the two waves perpendicular to each other. The polarisation of a radio wave is determined by
+        the direction of the electric field. Most antennas radiate waves that are polarised in the direction of the
+        length of the metal radiating element. For example, the metal whips as used on cars are vertically polarised
+        while the wire antennas typically used at HF have horizontal polarisation. Polarisation is important on VHF and
+        higher but is not very important for HF communications because the many reflections that a skywave undergoes
+        makes its polarisation quite random.</p>
+        <h4 class="doc-h4"><strong>The path</strong></h4>
+        <p>The simplest path to understand is the direct
+        path in a straight line between transmitter and receiver. These are most important for communication on
+        frequencies above 50 MHz. The signal might be reflected off buildings and mountains to fill in some shadows,
+        but usually communication is just line-of-sight. On lower frequencies (e.g. the HF bands) the ionosphere is
+        able to reflect the radio waves. The actual direction-change in the ionosphere is closer to
+        <strong>refraction</strong> but <strong><em>reflection is</em></strong> <strong><em>easier to
+        understand</em></strong>. For simplicity, we will use the reflection word here. Similarly, again for
+        simplicity, we will consider the regions where the change-of-direction takes place to be "layers" although they
+        are more strictly "regions". The signal reflected off the ionosphere is referred to as the skywave or
+        ionospheric wave. The groundwave is the signal that travels on the surface of the earth and depends upon the
+        surface conductivity.</p>
+        <p>Groundwaves are the main mode of transmission on the MF bands (e.g. AM broadcast band), but they are not
+        very important for amateur use - except perhaps on the only amateur MF band, 160 metres, 1.8 MHz. The
+        groundwave is usually attenuated within 100 km. On VHF and higher frequencies, variations in the atmospheric
+        density can bend the radio waves back down to the earth. This is referred to as the tropospheric wave.</p>
+        <figure class="doc-img">
+          <img src=
+          "data:image/jpeg;base64,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XqxiCIMi1rMmyQlRrUjlOPNCYnHUpEJLI4QTXoXQScDJKjKJUWagomiHNAPWojQpYNHX0+e+rf8ArEJEKAoFMumAFingxTBndYsifxpgzusWRP40yCIMi0rNmyyFVpQnhOPFCJjBBMH7RRsJulzYZEnp8LevqCmR8BpP+QL0+e+jcYFEHXP5n94kojEsOyQfh069rY3uAGf1v7+6896bjAog64JEeoPTf0LIwl282U/nfFqzui+0Dxho81CPqKRW1D7JXJy1RVwNLkO4yGBbno4KZejpfJwEaQKdT0TNLfbee+dCCirtg1eDI85qSOQGnVNHRyXOWSO2xwU9NDhiE0nWq+LFFrgZaXckUVMUheMCJEEwLGRAYBNV6+HDUhjln+X59DM1WdVtLee5ktACkS9xDeomEna475Utr9n574rZcU/glpA0rNoWhkopLG3BwU9e/wD/AOEG/wCscT07IF4Im574wdUk9zbMEaz3xP7al4nKXKExaKx+MHKDuKqeDDAwCgS9JuNYdklTI3jgH0pocA1xJ2uO+VLa/YpTLoQBvjp2ara5PBd1ipgAABQD6BkwQBEGXIDqjrjkwQjEmLQJKKD2wNAkgpPbAQCsWRsbY5ciVWq+u0k6I9uShRpTI9nSCXJ6Kkl2jD3iISDc+vI/gHJucOh12j7jTp06dOnTp06dOnTp06dOnTp06dOm5G1Gk6kj+F6SzjpgBYp4MU/+d//aAAwDAQACAAMAAAAQkkkkkkkkkkkkkkkkkkkki22yyW2kkkgEkkkkkkkki2JpJO20kkt7kkkkkkkki2SSSW20kkAgkkkkkkkki222222zyzkkkkkkkkkki222222RkD2ckkkkkkkki2222200kkkGVkkkkkkki22xskkUkkkkj0cjplMki20lW22SkkkkkFlltjckiwCSW22wS4kkkkkkkkkklhWJppW0knW8kkkkkkkki2ySWW20kkkq8kkkkkkki2222220kkkkm8IlAEkki222Vgk2SckkkY9lljZki22oq220kDykkkkgggEki2kW2220kkkaskkkkkkkisW22220kkkkekkkkkkkkO222220kkkkgUctotEki2222220kkkkkkcko7kki2222xbdkkkkkkkkkkkki22z/hJJBJkkkkkkkkkki2TBJNpppJFEkkkkkkkkizJJJJpJtJJt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"
+          alt="Diagram" style="max-width:628px;width:100%">
+        </figure>
+        <h4 class="doc-h4"><strong>The skywave</strong></h4>
+        <p>The skywave is the primary mode of long distance communication
+        by radio amateurs and is usually of the most interest. A skywave will go farther if it can take longer "hops".
+        For this reason, a low angle (&lt; 30° ) radiation is best for DX (long distance) communication as it will
+        travel farther before reflecting back to earth. Antennas that produce low angle radiation include verticals or
+        dipoles mounted high (at least half a wavelength) above the ground.</p>
+        <h4 class="doc-h4"><strong>The sun and the ionosphere</strong></h4>
+        <p>The ionosphere refers to the upper region of the atmosphere where charged gas molecules have been produced by
+        the energy of the sun. The degree of ionisation varies with the intensity of the solar radiation. Various
+        cycles affect the amount of solar radiation with the obvious ones being the daily and yearly cycles. This means
+        that ionisation will be greatest around noon in the summer and at minimum just before dawn in the winter.</p>
+        <p>The output from the sun varies over a longer period of approximately 11 years. During the maximum of the solar
+        sunspot cycle, there is greater solar activity and hence greater ionisation of the ionosphere. Greater solar
+        activity generally results in better conditions for radio propagation by increasing ionisation. However, very
+        intense activity in the form of geomagnetic storms triggered by a solar flare can completely disrupt the layer
+        of the ionosphere and block communications. This can happen in minutes and communications can take hours to
+        recover.</p>
+        <h4 class="doc-h4"><strong>Ionospheric layers</strong></h4>
+        <p>The ionosphere is not a homogenous region but consists of rather
+        distinct layers or regions which have their own individual effects on radio propagation. The layers of distinct
+        interest to radio amateurs are the E and F layers.</p>
+        <p>The E layer at about 110 km is the lower of the two. It is in the denser region of the
+        atmosphere where the ions formed by solar energy recombine quickly. This means the layer is densest at noon and
+        dissipates quickly when the sun goes down. The F layer is higher and during the day separates into two layers,
+        F1 and F2 at about 225 and 320 km. It merges at night to form a single F layer at about 280 km. The different
+        layer of the ionosphere can reflect radio waves back down to earth which in turn can reflect the signal back up
+        again. A signal can "hop" around the world in this way. The higher the layer, the longer the hop. The longer
+        the hop the better since some of the signal's energy is lost at each hop. Lower angle radiation will go farther
+        before it reflects off the ionosphere. So to achieve greatest DX, one tries to choose a frequency that will
+        reflect off the highest layer possible and use the lowest angle of radiation. The distance covered in one hop
+        is the skip distance. For destinations beyond the maximum skip distance the signal must make multiple hops.</p>
+        <p>The
+        virtual height of any ionospheric layer at any time can be determined using an ionospheric sounder or
+        ionosonde, in effect a vertical radar. This sends pulses that sweep over a wide frequency range straight up
+        into the ionosphere. The echoes returned are timed (for distance) and recorded. A plot of frequency against
+        height can be produced. The highest frequency that returns echoes at vertical incidence is known as the
+        <strong><em>critical</em></strong> <strong><em>frequency</em></strong>.</p>
+        <h4 class="doc-h4"><strong>Absorption</strong></h4>
+        <p>The
+        ionosphere can also absorb radio waves as well as reflect them. The absorption is greater at lower frequencies
+        and with denser ionisation. There is another layer of ionisation below the E layer, called the D layer, which
+        only exists during the day. It will absorb almost all signals below 4 MHz - i.e. the 80 and 160 metre bands.
+        Short-range communication is still possible using higher angle radiation which is less affected. It travels a
+        shorter distance through the atmosphere. The signal can then reflect off the E layer to the receiver. The D and
+        E layers are responsible for you hearing only local AM broadcast stations during the day and more distant ones
+        at night.</p>
+        <h4 class="doc-h4"><strong>Attenuation</strong></h4>
+        <p>The attenuation of a signal by the ionosphere is higher at lower
+        frequencies. So for greater distance communication one should use higher frequencies. But if the frequency used
+        is too high, the signal will pass into space and not reflect back to earth. This may be good for satellite
+        operation but is not useful for HF DX working.</p>
+        <p>For DX working on HF, one should try to use the highest
+        frequency that will still reflect off the ionosphere. This varies with solar activity and time of day. It can
+        be calculated with various formulas given the current solar indices. This frequency is referred to as the
+        Maximum Usable Frequency (MUF). In the peak of the solar cycle it can often be over 30 MHz and on rare
+        occasions up to 50 MHz. At other times, during the night, it can drop below 10 MHz. At the low end of the
+        spectrum, daytime absorption by the D layer limits the possible range. In addition, atmospheric noise is
+        greater and limits the Lowest Usable Frequency (LUF). This noise and absorption decreases at night lowering the
+        LUF at the same time as the MUF is lowered by the decrease in solar excitation of the ionosphere. This usually
+        means that by picking the right frequency, long range communication is possible at any time.</p>
+        <h4 class="doc-h4"><strong>Fading</strong></h4>
+        <p>Radio waves can travel over different paths from transmitter to
+        receiver. If a path length varies by a multiple of half the wavelength of the signal, the signals arriving by
+        two or more paths may completely cancel each other. This multi-path action causes fading of the signal. Other
+        phenomena can cause this. Aircraft, mountains and ionospheric layers can reflect part of a signal while another
+        part takes a more direct path. Sometimes fading may be so frequency-dependent that one sideband of a double-
+        sideband (AM) signal may be completely unreadable while the other is "good copy". This is known as "selective
+        fading". It will often be observed just as a band is on the verge of closing, when reflections from two layers
+        are received simultaneously. Fading can also occur when a signal passes through the polar regions, referred to
+        as polar flutter, caused by different phenomena. The ionosphere is much more disorganised in the polar regions
+        because of the interaction of solar energy with the geomagnetic field. The same phenomena that cause aurora can
+        cause the wavering of signals on polar paths.</p>
+        <h4 class="doc-h4"><strong>Other atmospheric effects</strong></h4>
+        <p>Other atmospheric
+        effects can affect radio propagation and may often extend the transmission of VHF and higher signals beyond the
+        line-of-sight. The lowest region in the atmosphere, the troposphere, can scatter VHF signals more than 600 km -
+        tropospheric scatter. Ducting is a phenomenon where radio waves get trapped by a variation in the atmospheric
+        density. The waves can then travel along by refraction. Ducting usually occurs over water or other homogenous
+        surfaces. This is more common at higher frequencies and has permitted UHF communication over distances greater
+        than 2500 km.</p>
+        <p>Another phenomenon, sporadic E skip, is a seasonal occurrence, usually during the summer. A small
+        region of the E layer becomes more highly charged than usual, permitting the reflection of signals as high in
+        frequency as 200 MHz. This highly-charged region soon dissipates. Sporadic E propagation will occur for only a
+        few minutes to a few hours. Communication can be achieved by bouncing signals off the ionised trails of
+        meteors. Meteor scatter communication may only last a few seconds so it is feasible only when large numbers of
+        meteors enter the atmosphere, particularly during times of meteor showers.</p>
+        <h4 class="doc-h4"><strong>Skip zone</strong></h4>
+        <figure class="doc-img">
+          <img src=
+          "data:image/jpeg;base64,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"
+          alt="Diagram" style="max-width:700px;width:100%">
+        </figure>
+        <p>Amateurs are usually concerned about working to the maximum possible distances but there are times when one
+        can talk to people thousands of kilometres away but cannot talk to someone only 500 km away. A skip zone can be
+        created by the ionosphere reflecting signals from a shallow angle. Waves at a higher angle pass directly
+        through and are lost into space. The critical angle varies with the degree of ionisation and generally results
+        in larger skip zones at night. The area between the limit of maximum range by direct wave or ground wave, and
+        the maximum skip distance by skywave is known as the skip zone.</p>
+      </section>
+      <section id="qf-28" class="question-section">
+        <div class="qf-header">
+          <span class="qf-tag">Q</span>Question File 28 – Propagation <span class="qf-count">(50 questions)</span>
+        </div>
+        <div class="qf-controls">
+          <button onclick="revealAll(this)" class="reveal-all-btn">Show All Answers</button><button onclick=
+          "resetAll(this)" class="reset-btn">Reset</button>
+        </div>
+        <div class="question" data-answer="C">
+          <p class="q-text"><strong>1.</strong> A 'skip zone' is:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>the distance between the antenna and
+            where the refracted wave first returns to earth</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>the distance between the far end of
+            the ground wave and where the refracted wave first returns to earth</li>
+            <li data-correct="true" data-letter="c"><span class="letter">c</span>the distance between any two refracted
+            waves</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>a zone caused by lost sky waves</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>C</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="C">
+          <p class="q-text"><strong>2.</strong> The medium which reflects high frequency radio waves back to the
+          earth's surface is called the:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>biosphere</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>stratosphere</li>
+            <li data-correct="true" data-letter="c"><span class="letter">c</span>ionosphere</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>troposphere</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>C</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="B">
+          <p class="q-text"><strong>3.</strong> The highest frequency that will be reflected back to the earth at any
+          given time is known as the:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>UHF</li>
+            <li data-correct="true" data-letter="b"><span class="letter">b</span>MUF</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>OWF</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>LUF</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>B</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="C">
+          <p class="q-text"><strong>4.</strong> All communications frequencies throughout the spectrum are affected in
+          varying degrees by the:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>atmospheric conditions</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>ionosphere</li>
+            <li data-correct="true" data-letter="c"><span class="letter">c</span>aurora borealis</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>sun</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>C</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="A">
+          <p class="q-text"><strong>5.</strong> Solar cycles have an average length of:</p>
+          <ul class="options">
+            <li data-correct="true" data-letter="a"><span class="letter">a</span>1 year</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>3 years</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>6 years</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>11 years</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>A</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="A">
+          <p class="q-text"><strong>6.</strong> The 'skywave' is another name for the:</p>
+          <ul class="options">
+            <li data-correct="true" data-letter="a"><span class="letter">a</span>ionospheric wave</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>tropospheric wave</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>ground wave</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>inverted wave</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>A</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="C">
+          <p class="q-text"><strong>7.</strong> The polarisation of an electromagnetic wave is defined by the direction
+          of:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>the H field</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>propagation</li>
+            <li data-correct="true" data-letter="c"><span class="letter">c</span>the E field</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>the receiving antenna</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>C</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="C">
+          <p class="q-text"><strong>8.</strong> That portion of HF radiation which is directly affected by the surface
+          of the earth is called:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>ionospheric wave</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>local field wave</li>
+            <li data-correct="true" data-letter="c"><span class="letter">c</span>ground wave</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>inverted wave</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>C</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="D">
+          <p class="q-text"><strong>9.</strong> Radio wave energy on frequencies below 4 MHz during daylight hours is
+          almost completely absorbed by this ionospheric layer:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>C</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>D</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>E</li>
+            <li data-correct="true" data-letter="d"><span class="letter">d</span>F</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>D</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="A">
+          <p class="q-text"><strong>10.</strong> Because of high absorption levels at frequencies below 4 MHz during
+          daylight hours, only high angle signals are normally reflected back by this layer:</p>
+          <ul class="options">
+            <li data-correct="true" data-letter="a"><span class="letter">a</span>C</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>D</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>E</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>F</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>A</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="D">
+          <p class="q-text"><strong>11.</strong> Scattered patches of high ionisation developed seasonally at the
+          height of one of the layers is called:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>sporadic-E</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>patchy</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>random reflectors</li>
+            <li data-correct="true" data-letter="d"><span class="letter">d</span>trans-equatorial ionisation</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>D</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="B">
+          <p class="q-text"><strong>12.</strong> For long distance propagation, the radiation angle of energy from the
+          antenna should be:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>less than 30 degrees</li>
+            <li data-correct="true" data-letter="b"><span class="letter">b</span>more than 30 degrees but less than
+            forty-five</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>more than 45 degrees but less than
+            ninety</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>90 degrees</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>B</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="D">
+          <p class="q-text"><strong>13.</strong> The path radio waves normally follow from a transmitting antenna to a
+          receiving antenna at VHF and higher frequencies is a:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>circular path going north or south
+            from the transmitter</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>great circle path</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>straight line</li>
+            <li data-correct="true" data-letter="d"><span class="letter">d</span>bent path via the ionosphere</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>D</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="D">
+          <p class="q-text"><strong>14.</strong> A radio wave may follow two or more different paths during propagation
+          and produce slowlychanging phase differences between signals at the receiver resulting in a phenomenon
+          called:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>absorption</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>baffling</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>fading</li>
+            <li data-correct="true" data-letter="d"><span class="letter">d</span>skip</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>D</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="D">
+          <p class="q-text"><strong>15.</strong> The region from the far end of the ground wave to the nearest point
+          where the sky wave returns to the earth is called the:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>skip distance</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>radiation distance</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>skip angle</li>
+            <li data-correct="true" data-letter="d"><span class="letter">d</span>skip zone</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>D</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="D">
+          <p class="q-text"><strong>16.</strong> High Frequency long-distance propagation is most dependent on:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>ionospheric reflection</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>tropospheric reflection</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>ground reflection</li>
+            <li data-correct="true" data-letter="d"><span class="letter">d</span>inverted reflection</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>D</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="D">
+          <p class="q-text"><strong>17.</strong> The layer of the ionosphere mainly responsible for long distance
+          communication is:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>C</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>D</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>E</li>
+            <li data-correct="true" data-letter="d"><span class="letter">d</span>F</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>D</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="A">
+          <p class="q-text"><strong>18.</strong> The ionisation level of the ionosphere reaches its minimum:</p>
+          <ul class="options">
+            <li data-correct="true" data-letter="a"><span class="letter">a</span>just after sunset</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>just before sunrise</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>at noon</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>at midnight</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>A</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="C">
+          <p class="q-text"><strong>19.</strong> One of the ionospheric layers splits into two parts during the day
+          called:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>A & B</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>D1 & D2</li>
+            <li data-correct="true" data-letter="c"><span class="letter">c</span>E1 & E2</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>F1 & F2</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>C</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="B">
+          <p class="q-text"><strong>20.</strong> Signal fadeouts resulting from an 'ionospheric storm' or 'sudden
+          ionospheric disturbance' are usually attributed to:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>heating of the ionised layers</li>
+            <li data-correct="true" data-letter="b"><span class="letter">b</span>over-use of the signal path</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>insufficient transmitted power</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>solar flare activity</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>B</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="A">
+          <p class="q-text"><strong>21.</strong> The 80 metre band is useful for working:</p>
+          <ul class="options">
+            <li data-correct="true" data-letter="a"><span class="letter">a</span>in the summer at midday during high
+            sunspot activity</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>long distance during daylight hours
+            when absorption is not significant</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>all points on the earth's
+            surface</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>up to several thousand kilometres in
+            darkness but atmospheric and man-made noises tend to be high</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>A</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="D">
+          <p class="q-text"><strong>22.</strong> The skip distance of radio signals is determined by the:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>type of transmitting antenna
+            used</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>power fed to the final amplifier of
+            the transmitter</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>only the angle of radiation from the
+            antenna</li>
+            <li data-correct="true" data-letter="d"><span class="letter">d</span>both the height of the ionosphere and
+            the angle of radiation from the antenna</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>D</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="B">
+          <p class="q-text"><strong>23.</strong> Three recognised layers of the ionosphere that affect radio
+          propagation are:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>A, E, F</li>
+            <li data-correct="true" data-letter="b"><span class="letter">b</span>B, D, E</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>C, E, F</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>D, E, F</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>B</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="B">
+          <p class="q-text"><strong>24.</strong> Propagation on 80 metres during the summer daylight hours is limited
+          to relatively short distances because of</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>high absorption in the D layer</li>
+            <li data-correct="true" data-letter="b"><span class="letter">b</span>the disappearance of the E layer</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>poor refraction by the F layer</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>pollution in the T layer</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>B</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="B">
+          <p class="q-text"><strong>25.</strong> The distance from the transmitter to the nearest point where the sky
+          wave returns to the earth is called the:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>angle of radiation</li>
+            <li data-correct="true" data-letter="b"><span class="letter">b</span>maximum usable frequency</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>skip distance</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>skip zone</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>B</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="B">
+          <p class="q-text"><strong>26.</strong> A variation in received signal strength caused by slowly changing
+          differences in path lengths is called:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>absorption</li>
+            <li data-correct="true" data-letter="b"><span class="letter">b</span>fading</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>fluctuation</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>path loss</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>B</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="A">
+          <p class="q-text"><strong>27.</strong> VHF and UHF bands are frequently used for satellite communication
+          because:</p>
+          <ul class="options">
+            <li data-correct="true" data-letter="a"><span class="letter">a</span>waves at these frequencies travel to
+            and from the satellite relatively unaffected by the ionosphere</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>the Doppler frequency change caused
+            by satellite motion is much less than at HF</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>satellites move too fast for HF waves
+            to follow</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>the Doppler effect would cause HF
+            waves to be shifted into the VHF and UHF bands.</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>A</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="C">
+          <p class="q-text"><strong>28.</strong> The 'critical frequency' is defined as the:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>highest frequency to which your
+            transmitter can be tuned</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>lowest frequency which is reflected
+            back to earth at vertical incidence</li>
+            <li data-correct="true" data-letter="c"><span class="letter">c</span>minimum usable frequency</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>highest frequency which will be
+            reflected back to earth at vertical incidence</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>C</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="C">
+          <p class="q-text"><strong>29.</strong> The speed of a radio wave:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>varies indirectly to the
+            frequency</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>is the same as the speed of
+            light</li>
+            <li data-correct="true" data-letter="c"><span class="letter">c</span>is infinite in space</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>is always less than half the speed of
+            light</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>C</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="C">
+          <p class="q-text"><strong>30.</strong> The MUF for a given radio path is the:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>mean of the maximum and minimum
+            usable frequencies</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>maximum usable frequency</li>
+            <li data-correct="true" data-letter="c"><span class="letter">c</span>minimum usable frequency</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>mandatory usable frequency</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>C</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="D">
+          <p class="q-text"><strong>31.</strong> The position of the E layer in the ionosphere is:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>above the F layer</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>below the F layer</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>below the D layer</li>
+            <li data-correct="true" data-letter="d"><span class="letter">d</span>sporadic</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>D</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="D">
+          <p class="q-text"><strong>32.</strong> A distant amplitude-modulated station is heard quite loudly but the
+          modulation is at times severely distorted. A similar local station is not affected. The probable cause of
+          this is:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>transmitter malfunction</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>selective fading</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>a sudden ionospheric disturbance</li>
+            <li data-correct="true" data-letter="d"><span class="letter">d</span>front end overload</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>D</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="D">
+          <p class="q-text"><strong>33.</strong> Skip distance is a term associated with signals through the
+          ionosphere. Skip effects are due to:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>reflection and refraction from the
+            ionosphere</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>selective fading of local
+            signals</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>high gain antennas being used</li>
+            <li data-correct="true" data-letter="d"><span class="letter">d</span>local cloud cover</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>D</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="B">
+          <p class="q-text"><strong>34.</strong> The type of atmospheric layers which will best return signals to earth
+          are:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>oxidised layers</li>
+            <li data-correct="true" data-letter="b"><span class="letter">b</span>heavy cloud layers</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>ionised layers</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>sun spot layers</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>B</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="A">
+          <p class="q-text"><strong>35.</strong> The ionosphere:</p>
+          <ul class="options">
+            <li data-correct="true" data-letter="a"><span class="letter">a</span>is a magnetised belt around the
+            earth</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>consists of magnetised particles
+            around the earth</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>is formed from layers of ionised
+            gases around the earth</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>is a spherical belt of solar
+            radiation around the earth</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>A</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="D">
+          <p class="q-text"><strong>36.</strong> The skip distance of a sky wave will be greatest when the:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>ionosphere is most densely
+            ionised</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>signal given out is strongest</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>angle of radiation is smallest</li>
+            <li data-correct="true" data-letter="d"><span class="letter">d</span>polarisation is vertical</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>D</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="B">
+          <p class="q-text"><strong>37.</strong> If the height of the reflecting layer of the ionosphere increases, the
+          skip distance of a high frequency transmission:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>stays the same</li>
+            <li data-correct="true" data-letter="b"><span class="letter">b</span>decreases</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>varies regularly</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>becomes greater</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>B</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="A">
+          <p class="q-text"><strong>38.</strong> If the frequency of a transmitted signal is so high that we no longer
+          receive a reflection from the ionosphere, the signal frequency is above the:</p>
+          <ul class="options">
+            <li data-correct="true" data-letter="a"><span class="letter">a</span>speed of light</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>sun spot frequency</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>skip distance</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>maximum usable frequency</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>A</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="C">
+          <p class="q-text"><strong>39.</strong> A 'line of sight' transmission between two stations uses mainly
+          the:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>ionosphere</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>troposphere</li>
+            <li data-correct="true" data-letter="c"><span class="letter">c</span>sky wave</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>ground wave</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>C</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="C">
+          <p class="q-text"><strong>40.</strong> The distance travelled by ground waves in air:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>is the same for all frequencies</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>is less at higher frequencies</li>
+            <li data-correct="true" data-letter="c"><span class="letter">c</span>is more at higher frequencies</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>depends on the maximum usable
+            frequency</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>C</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="B">
+          <p class="q-text"><strong>41.</strong> The radio wave from the transmitter to the ionosphere and back to
+          earth is correctly known as the:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>sky wave</li>
+            <li data-correct="true" data-letter="b"><span class="letter">b</span>skip wave</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>surface wave</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>F layer</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>B</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="C">
+          <p class="q-text"><strong>42.</strong> Reception of high frequency radio waves beyond 4000 km normally occurs
+          by the:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>ground wave</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>skip wave</li>
+            <li data-correct="true" data-letter="c"><span class="letter">c</span>surface wave</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>sky wave</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>C</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="A">
+          <p class="q-text"><strong>43.</strong> A 28 MHz radio signal is more likely to be heard over great
+          distances:</p>
+          <ul class="options">
+            <li data-correct="true" data-letter="a"><span class="letter">a</span>if the transmitter power is
+            reduced</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>during daylight hours</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>only during the night</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>at full moon</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>A</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="B">
+          <p class="q-text"><strong>44.</strong> The number of high frequency bands open to long distance communication
+          at any time depends on:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>the highest frequency at which
+            ionospheric reflection can occur</li>
+            <li data-correct="true" data-letter="b"><span class="letter">b</span>the number of frequencies the receiver
+            can tune</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>the power being radiated by the
+            transmitting station</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>the height of the transmitting
+            antenna</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>B</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="B">
+          <p class="q-text"><strong>45.</strong> Regular changes in the ionosphere occur approximately every 11:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>days</li>
+            <li data-correct="true" data-letter="b"><span class="letter">b</span>months</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>years</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>centuries</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>B</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="A">
+          <p class="q-text"><strong>46.</strong> When a HF transmitted radio signal reaches a receiver, small changes
+          in the ionosphere can cause:</p>
+          <ul class="options">
+            <li data-correct="true" data-letter="a"><span class="letter">a</span>consistently stronger signals</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>a change in the ground wave
+            signal</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>variations in signal strength</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>consistently weaker signals</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>A</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="A">
+          <p class="q-text"><strong>47.</strong> The usual effect of ionospheric storms is to:</p>
+          <ul class="options">
+            <li data-correct="true" data-letter="a"><span class="letter">a</span>increase the maximum usable
+            frequency</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>cause a fade-out of sky-wave
+            signals</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>produce extreme weather changes</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>prevent communications by ground
+            wave</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>A</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="D">
+          <p class="q-text"><strong>48.</strong> Changes in received signal strength when sky wave propagation is used
+          are called:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>ground wave losses</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>modulation losses</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>fading</li>
+            <li data-correct="true" data-letter="d"><span class="letter">d</span>sunspots</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>D</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="B">
+          <p class="q-text"><strong>49.</strong> Although high frequency signals may be received from a distant station
+          by a sky wave at a certain time, it may not be possible to hear them an hour later. This may be due to:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>changes in the ionosphere</li>
+            <li data-correct="true" data-letter="b"><span class="letter">b</span>shading of the earth by clouds</li>
+            <li data-correct="false" data-letter="c"><span class="letter">c</span>changes in atmospheric
+            temperature</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>absorption of the ground wave
+            signal</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>B</strong></span>
+          </div>
+        </div>
+        <div class="question" data-answer="C">
+          <p class="q-text"><strong>50.</strong> VHF or UHF signals transmitted towards a tall building are often
+          received at a more distant point in another direction because:</p>
+          <ul class="options">
+            <li data-correct="false" data-letter="a"><span class="letter">a</span>these waves are easily bent by the
+            ionosphere</li>
+            <li data-correct="false" data-letter="b"><span class="letter">b</span>these waves are easily reflected by
+            objects in their path</li>
+            <li data-correct="true" data-letter="c"><span class="letter">c</span>you can never tell in which direction
+            a wave is travelling</li>
+            <li data-correct="false" data-letter="d"><span class="letter">d</span>tall buildings have elevators</li>
+          </ul>
+          <div class="answer-bar">
+            <button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button><span class="answer-label"
+            style="display:none">Answer: <strong>C</strong></span>
+          </div>
+        </div>
+      </section>

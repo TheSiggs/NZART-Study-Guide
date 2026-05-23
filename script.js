@@ -1,10 +1,11 @@
-document.querySelectorAll('.options li').forEach(li => {
-  li.addEventListener('click', () => {
-    const q = li.closest('.question');
-    if (q.classList.contains('revealed')) return;
+document.addEventListener('click', e => {
+  const li = e.target.closest('.options li');
+  if (!li) return;
+  const q = li.closest('.question');
+  if (q && !q.classList.contains('revealed')) {
     q.querySelectorAll('.options li').forEach(x => x.classList.remove('selected'));
     li.classList.add('selected');
-  });
+  }
 });
 
 function revealAnswer(btn) {
@@ -41,20 +42,24 @@ function updateScore(sec) {
   if (revealed > 0) sd.textContent = revealed+'/'+total+' answered · '+correct+' correct · '+wrong+' wrong';
 }
 
-const allSec = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('#nav-list a');
-allSec.forEach(s => {
-  new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        const id = e.target.id;
-        navLinks.forEach(a => a.parentElement.classList.toggle('active', a.getAttribute('href') === '#' + id));
-        const active = document.querySelector('#nav-list li.active a');
-        if (active) active.scrollIntoView({block:'nearest', behavior:'smooth'});
-      }
-    });
-  }, { rootMargin: '-10% 0px -80% 0px' }).observe(s);
-});
+function initNavObserver() {
+  const allSec = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('#nav-list a');
+  allSec.forEach(s => {
+    new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          const id = e.target.id;
+          navLinks.forEach(a => a.parentElement.classList.toggle('active', a.getAttribute('href') === '#' + id));
+          const active = document.querySelector('#nav-list li.active a');
+          if (active) active.scrollIntoView({block:'nearest', behavior:'smooth'});
+        }
+      });
+    }, { rootMargin: '-10% 0px -80% 0px' }).observe(s);
+  });
+}
+
+document.addEventListener('sections-loaded', initNavObserver);
 
 function filterNav(q) {
   q = q.toLowerCase();
