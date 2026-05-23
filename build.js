@@ -15,5 +15,15 @@ for (let i = 1; i <= 30; i++) {
 
 combined += '\n</div>\n' + after;
 
-fs.writeFileSync('index.static.html', combined, 'utf8');
+fs.copyFile('styles.css', 'dist/styles.css', (err) => {
+  if (err) throw err;
+  console.log('styles.css copied successfully!');
+});
+
+fs.copyFile('script.js', 'dist/script.js', (err) => {
+  if (err) throw err;
+  console.log('script.js copied successfully!');
+});
+
+fs.writeFileSync('dist/index.html', combined, 'utf8');
 console.log('Written index.static.html (' + combined.split('\n').length + ' lines)');
