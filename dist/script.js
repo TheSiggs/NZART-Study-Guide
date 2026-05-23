@@ -81,6 +81,21 @@ document.addEventListener('DOMContentLoaded', () => {
       if (window.innerWidth <= 768) toggleSidebar();
     });
   });
+
+  // Theme toggle
+  const themeBtn = document.getElementById('theme-toggle');
+  const saved = localStorage.getItem('theme');
+  if (saved === 'light') document.documentElement.setAttribute('data-theme', 'light');
+  if (themeBtn) {
+    themeBtn.textContent = saved === 'light' ? '☀️' : '🌙';
+    themeBtn.addEventListener('click', () => {
+      const html = document.documentElement;
+      const isLight = html.getAttribute('data-theme') === 'light';
+      html.setAttribute('data-theme', isLight ? '' : 'light');
+      localStorage.setItem('theme', isLight ? '' : 'light');
+      themeBtn.textContent = isLight ? '🌙' : '☀️';
+    });
+  }
 });
 
 function filterNav(q) {
