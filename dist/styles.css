@@ -474,6 +474,10 @@ body {
   color: var(--red);
 }
 
+.red {
+  color: var(--red) !important;
+}
+
 .question.revealed .options {
   pointer-events: none;
 }
